@@ -1,0 +1,84 @@
+{
+  "trailingSlash": true,
+  "cleanUrls": true,
+  "redirects": [
+    { "source": "/menu.html", "destination": "/menu/", "statusCode": 301 },
+    { "source": "/midi.html", "destination": "/midi/", "statusCode": 301 },
+
+    { "source": "/contactez-nous-2/", "destination": "/", "statusCode": 301 },
+    { "source": "/contactez-nous-2", "destination": "/", "statusCode": 301 },
+    { "source": "/menu-2/", "destination": "/menu/", "statusCode": 301 },
+    { "source": "/menu-2", "destination": "/menu/", "statusCode": 301 },
+    { "source": "/carte-des-vins/", "destination": "/menu/", "statusCode": 301 },
+    { "source": "/carte-des-vins", "destination": "/menu/", "statusCode": 301 },
+    { "source": "/menus/:path*", "destination": "/menu/", "statusCode": 301 },
+    { "source": "/promotions/:path*", "destination": "/", "statusCode": 301 },
+    { "source": "/category/:path*", "destination": "/", "statusCode": 301 },
+    { "source": "/tag/:path*", "destination": "/", "statusCode": 301 },
+
+    { "source": "/2020/:path*", "destination": "/midi/", "statusCode": 301 },
+    { "source": "/2021/:path*", "destination": "/midi/", "statusCode": 301 },
+    { "source": "/2022/:path*", "destination": "/midi/", "statusCode": 301 },
+    { "source": "/2023/:path*", "destination": "/midi/", "statusCode": 301 },
+    { "source": "/2024/:path*", "destination": "/midi/", "statusCode": 301 },
+    { "source": "/2025/:path*", "destination": "/midi/", "statusCode": 301 },
+
+    { "source": "/wp-content/:path*", "destination": "/", "statusCode": 301 },
+    { "source": "/wp-admin/:path*", "destination": "/", "statusCode": 301 },
+    { "source": "/wp-login.php", "destination": "/", "statusCode": 301 },
+    { "source": "/wp-includes/:path*", "destination": "/", "statusCode": 301 },
+    { "source": "/feed/", "destination": "/", "statusCode": 301 },
+    { "source": "/feed", "destination": "/", "statusCode": 301 },
+    { "source": "/xmlrpc.php", "destination": "/", "statusCode": 301 },
+    { "source": "/author/:path*", "destination": "/", "statusCode": 301 }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "DENY" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
+        { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=()" }
+      ]
+    },
+    {
+      "source": "/menu/sw.js",
+      "headers": [
+        { "key": "Service-Worker-Allowed", "value": "/menu/" },
+        { "key": "Cache-Control", "value": "no-cache" }
+      ]
+    },
+    {
+      "source": "/midi/sw.js",
+      "headers": [
+        { "key": "Service-Worker-Allowed", "value": "/midi/" },
+        { "key": "Cache-Control", "value": "no-cache" }
+      ]
+    },
+    {
+      "source": "/menu/manifest.webmanifest",
+      "headers": [
+        { "key": "Content-Type", "value": "application/manifest+json" }
+      ]
+    },
+    {
+      "source": "/midi/manifest.webmanifest",
+      "headers": [
+        { "key": "Content-Type", "value": "application/manifest+json" }
+      ]
+    },
+    {
+      "source": "/js/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=2592000, immutable" }
+      ]
+    },
+    {
+      "source": "/(.*\\.png|.*\\.ico|.*\\.svg|.*\\.webp)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    }
+  ]
+}
