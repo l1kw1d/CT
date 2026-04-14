@@ -1,0 +1,36 @@
+{
+  "trailingSlash": true,
+  "cleanUrls": true,
+  "redirects": [
+    { "source": "/menu.html", "destination": "/menu/", "statusCode": 301 },
+    { "source": "/midi.html", "destination": "/midi/", "statusCode": 301 }
+  ],
+  "headers": [
+    {
+      "source": "/menu/sw.js",
+      "headers": [
+        { "key": "Service-Worker-Allowed", "value": "/menu/" },
+        { "key": "Cache-Control", "value": "no-cache" }
+      ]
+    },
+    {
+      "source": "/midi/sw.js",
+      "headers": [
+        { "key": "Service-Worker-Allowed", "value": "/midi/" },
+        { "key": "Cache-Control", "value": "no-cache" }
+      ]
+    },
+    {
+      "source": "/menu/manifest.webmanifest",
+      "headers": [
+        { "key": "Content-Type", "value": "application/manifest+json" }
+      ]
+    },
+    {
+      "source": "/midi/manifest.webmanifest",
+      "headers": [
+        { "key": "Content-Type", "value": "application/manifest+json" }
+      ]
+    }
+  ]
+}

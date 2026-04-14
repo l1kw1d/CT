@@ -1,0 +1,21 @@
+{
+  "id": "/menu/",
+  "name": "Menu — Club Touriste",
+  "short_name": "Menu CT",
+  "description": "Carte complète du Club Touriste : entrées, viandes, poissons, cocktails, spiritueux.",
+  "start_url": "/menu/",
+  "scope": "/menu/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0F0D0A",
+  "theme_color": "#0F0D0A",
+  "categories": ["food"],
+  "lang": "fr-CA",
+  "dir": "ltr",
+  "icons": [
+    {"src": "/icons/menu-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
+    {"src": "/icons/menu-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"},
+    {"src": "/icons/menu-maskable-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable"},
+    {"src": "/icons/menu-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+  ]
+}

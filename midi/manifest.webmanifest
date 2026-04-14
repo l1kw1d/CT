@@ -1,0 +1,21 @@
+{
+  "id": "/midi/",
+  "name": "Menu Midi — Club Touriste",
+  "short_name": "Midi CT",
+  "description": "Menu du midi du Club Touriste — lundi au vendredi dès 11h30. Entrée incluse.",
+  "start_url": "/midi/",
+  "scope": "/midi/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0F0D0A",
+  "theme_color": "#0F0D0A",
+  "categories": ["food"],
+  "lang": "fr-CA",
+  "dir": "ltr",
+  "icons": [
+    {"src": "/icons/midi-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
+    {"src": "/icons/midi-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"},
+    {"src": "/icons/midi-maskable-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable"},
+    {"src": "/icons/midi-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+  ]
+}
