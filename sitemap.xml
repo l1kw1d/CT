@@ -19,9 +19,15 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://clubtouriste.ca/vins.html</loc>
-    <lastmod>2026-04-07</lastmod>
+    <loc>https://clubtouriste.ca/vins/</loc>
+    <lastmod>2026-04-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>    
+    <loc>https://clubtouriste.ca/politique-de-confidentialite/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefred>
+    <priority>0.6</priority>
   </url>
 </urlset>
