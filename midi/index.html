@@ -46,14 +46,14 @@
 <meta name="description" content="Menu du midi du Club Touriste — lundi au vendredi dès 11h30. Entrée incluse, repas à partir de 25.95$, desserts maison. Restaurant gastronomique Salaberry-de-Valleyfield. Réservez au (450) 373-5290.">
 <meta name="keywords" content="menu midi Valleyfield, lunch Valleyfield, restaurant dîner Salaberry-de-Valleyfield, spécial midi restaurant Montérégie, menu du jour Valleyfield, restaurant lunch Beauharnois, menu midi Club Touriste, repas midi Valleyfield, dîner restaurant Valleyfield, table d'hôte Valleyfield">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://clubtouriste.ca/midi.html">
+<link rel="canonical" href="https://clubtouriste.ca/midi/">
 <meta name="geo.region" content="CA-QC">
 <meta name="geo.placename" content="Salaberry-de-Valleyfield, Québec">
 <meta property="og:type" content="restaurant.menu">
 <meta property="og:site_name" content="Club Touriste">
 <meta property="og:title" content="Menu du Midi — Club Touriste | Lundi au vendredi dès 11h30">
 <meta property="og:description" content="Entrée incluse, repas à partir de 25.95$, desserts maison. Menu mis à jour chaque semaine. Réservez au (450) 373-5290.">
-<meta property="og:url" content="https://clubtouriste.ca/midi.html">
+<meta property="og:url" content="https://clubtouriste.ca/midi/">
 <meta property="og:image" content="https://clubtouriste.ca/og-midi.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -166,8 +166,8 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:3rem 2r
   <a href="/" class="nav-logo">Club Touriste</a>
   <ul class="nav-links">
     <li><a href="/#histoire">Histoire</a></li>
-    <li><a href="/menu.html">Menu</a></li>
-    <li><a href="/midi.html" class="active">Midi</a></li>
+    <li><a href="/menu/">Menu</a></li>
+    <li><a href="/midi/" class="active">Midi</a></li>
     <li><a href="/#experience">Expérience</a></li>
     <li><a href="/#evenements">Événements</a></li>
     <li><a href="/#contact">Contact</a></li>
@@ -322,7 +322,7 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:3rem 2r
   <p>Venez dîner dans la Villa Cécilia — du lundi au vendredi, dès 11h30.</p>
   <a href="https://booking.libroreserve.com/260400d6ace7af7/QC017120721223/seat" target="_blank" class="btn-primary">Réserver une table</a>
   <div class="cta-links">
-    <a href="/menu.html">Menu du soir</a>
+    <a href="/menu/">Menu du soir</a>
     <a href="/vins.html">Carte des vins</a>
   </div>
   <a href="tel:+14503735290" class="cta-tel">(450) 373-5290</a>
@@ -343,7 +343,7 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:3rem 2r
 <script>
 // Register service worker for PWA install
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/sw-midi.js');
+  navigator.serviceWorker.register('/midi/sw.js');
 }
 
 const observer=new IntersectionObserver((entries)=>{entries.forEach(entry=>{if(entry.isIntersecting)entry.target.classList.add('visible')})},{threshold:.1});
