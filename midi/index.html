@@ -1,18 +1,36 @@
 <!DOCTYPE html>
 <html lang="fr-CA" prefix="og: https://ogp.me/ns#">
 <head>
-<!-- ═══ Loi 25 — Consentement cookies ═══ -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css">
-<script type="module" src="/js/cookieconsent-config.js"></script>
-
-<!-- Google tag (gtag.js) — bloqué jusqu'au consentement -->
-<script type="text/plain" data-cookiecategory="analytics" async src="https://www.googletagmanager.com/gtag/js?id=G-8JTHGEYTWG"></script>
-<script type="text/plain" data-cookiecategory="analytics">
+<!-- ─── Google Consent Mode v2 — défaut "denied" (Loi 25) ─── -->
+<script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-8JTHGEYTWG');
+  gtag('consent', 'default', {
+    'ad_storage': 'denied',
+    'ad_user_data': 'denied',
+    'ad_personalization': 'denied',
+    'analytics_storage': 'denied',
+    'functionality_storage': 'denied',
+    'personalization_storage': 'denied',
+    'security_storage': 'granted',
+    'wait_for_update': 500
+  });
 </script>
+
+<!-- ─── Google Analytics 4 ─── -->
+<!-- type="text/plain" et data-cookiecategory RETIRÉS : GA4 charge toujours -->
+<!-- Le Consent Mode contrôle ce qui est réellement transmis -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8JTHGEYTWG"></script>
+<script>
+  gtag('js', new Date());
+  gtag('config', 'G-8JTHGEYTWG', {
+    'anonymize_ip': true
+  });
+</script>
+
+<!-- ─── CookieConsent ─── -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css">
+<script type="module" src="/js/cookieconsent-config.js"></script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
