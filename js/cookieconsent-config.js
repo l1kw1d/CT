@@ -1,15 +1,23 @@
 /**
  * Club Touriste — Configuration CookieConsent v3
  * Conforme à la Loi 25 du Québec
+ *
+ * VERSION CORRIGÉE — Avril 2026
  * 
+ * Changement clé vs version précédente :
+ * → GA4 n'est PLUS bloqué par data-cookiecategory.
+ * → GA4 se charge toujours et respecte le Google Consent Mode v2.
+ * → Sans consentement : pings cookieless anonymes (conformes Loi 25).
+ * → Avec consentement : tracking complet.
+ *
  * Ce fichier doit être placé dans /js/cookieconsent-config.js
  * Il doit être inclus sur CHAQUE page HTML du site (index, menu, midi, etc.)
- * 
+ *
  * Dans le <head> de chaque page, ajouter :
  *   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css">
  *   <script type="module" src="/js/cookieconsent-config.js"></script>
- * 
- * Et modifier les scripts GA4 avec type="text/plain" data-cookiecategory="analytics"
+ *
+ * Le tag GA4 reste un <script> normal (PAS de type="text/plain", PAS de data-cookiecategory)
  */
 
 import * as CookieConsent from 'https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.esm.js';
@@ -19,95 +27,44 @@ const CAT_NECESSARY = "necessary";
 const CAT_ANALYTICS = "analytics";
 
 // ─── Initialisation du dataLayer et gtag ───
+// IMPORTANT : ce bloc doit s'exécuter AVANT le tag GA4 dans le HTML.
+// CookieConsent étant en type="module", il est différé. C'est pour ça que
+// le bloc gtag('consent', 'default', ...) doit ÉGALEMENT être inline dans
+// le <head> de chaque page, AVANT le tag GA4 (voir guide HTML).
+// On le redéfinit ici par sécurité au cas où le module se charge en premier.
 window.dataLayer = window.dataLayer || [];
 function gtag() { dataLayer.push(arguments); }
 
-// Consentement par défaut : tout refusé (Loi 25 — opt-in obligatoire)
-gtag('consent', 'default', {
-    'ad_storage': 'denied',
-    'ad_user_data': 'denied',
-    'ad_personalization': 'denied',
-    'analytics_storage': 'denied',
-    'functionality_storage': 'denied',
-    'personalization_storage': 'denied',
-    'security_storage': 'granted',
-});
-
 /**
- * Met à jour le consentement Google selon les choix de l'utilisateur
+ * Met à jour le consentement Google selon les choix de l'utilisateur.
+ * GA4 bascule du mode "cookieless ping" au mode "tracking complet".
  */
 function updateGtagConsent() {
+    const analyticsGranted = CookieConsent.acceptedCategory(CAT_ANALYTICS);
     gtag('consent', 'update', {
-        'analytics_storage': CookieConsent.acceptedCategory(CAT_ANALYTICS) ? 'granted' : 'denied',
+        'analytics_storage': analyticsGranted ? 'granted' : 'denied',
+        'ad_storage': 'denied',
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied',
     });
 }
 
-// ─── Thème sombre Club Touriste ───
-const style = document.createElement('style');
-style.textContent = `
-    :root {
-        --cc-bg: #1A1712;
-        --cc-primary-color: #F0EAE0;
-        --cc-secondary-color: #D5CDBF;
-        --cc-btn-primary-bg: #C9A96E;
-        --cc-btn-primary-color: #0F0D0A;
-        --cc-btn-primary-hover-bg: #E8D5A3;
-        --cc-btn-primary-hover-color: #0F0D0A;
-        --cc-btn-secondary-bg: #2A2520;
-        --cc-btn-secondary-color: #D5CDBF;
-        --cc-btn-secondary-hover-bg: #3A3530;
-        --cc-btn-secondary-hover-color: #F0EAE0;
-        --cc-separator-border-color: rgba(201,169,110,0.25);
-        --cc-cookie-category-block-bg: #231F1A;
-        --cc-cookie-category-block-border: rgba(201,169,110,0.25);
-        --cc-cookie-category-block-hover-bg: #2A2520;
-        --cc-cookie-category-block-hover-border: rgba(201,169,110,0.35);
-        --cc-cookie-category-expanded-block-hover-bg: #2A2520;
-        --cc-cookie-category-expanded-block-bg: #231F1A;
-        --cc-toggle-on-bg: #C9A96E;
-        --cc-toggle-off-bg: #4A4540;
-        --cc-toggle-readonly-bg: #3A3530;
-        --cc-toggle-on-knob-bg: #0F0D0A;
-        --cc-toggle-readonly-knob-bg: #231F1A;
-        --cc-overlay-bg: rgba(15,13,10,0.85);
-        --cc-footer-bg: #1A1712;
-        --cc-footer-border-color: rgba(201,169,110,0.25);
-    }
-    #cc-main a { color: #C9A96E; }
-    #cc-main a:hover { color: #E8D5A3; }
-`;
-document.head.appendChild(style);
-
-// ─── Configuration principale ───
+// ─── Configuration CookieConsent ───
 CookieConsent.run({
-
-    mode: 'opt-in',
-
-    cookie: {
-        name: 'cc_cookie_ct',
-        domain: location.hostname,
-        path: '/',
-        sameSite: 'Lax',
-        expiresAfterDays: 182,
-    },
-
     guiOptions: {
         consentModal: {
-            layout: 'cloud inline',
-            position: 'bottom center',
+            layout: 'box inline',
+            position: 'bottom left',
             equalWeightButtons: true,
             flipButtons: false,
         },
         preferencesModal: {
             layout: 'box',
+            position: 'right',
             equalWeightButtons: true,
             flipButtons: false,
-        }
+        },
     },
-
-    onFirstConsent: () => { updateGtagConsent(); },
-    onConsent: () => { updateGtagConsent(); },
-    onChange: () => { updateGtagConsent(); },
 
     categories: {
         [CAT_NECESSARY]: {
@@ -115,50 +72,53 @@ CookieConsent.run({
             readOnly: true,
         },
         [CAT_ANALYTICS]: {
+            enabled: false,
+            readOnly: false,
             autoClear: {
                 cookies: [
                     { name: /^_ga/ },
                     { name: '_gid' },
-                ]
+                ],
             },
-            services: {
-                'analytics_storage': {
-                    label: 'Permet le stockage de données liées aux statistiques de visite (durée, pages consultées).',
-                }
-            }
         },
     },
+
+    // Callbacks : déclenchés à chaque changement de consentement
+    onFirstConsent: () => updateGtagConsent(),
+    onConsent: () => updateGtagConsent(),
+    onChange: () => updateGtagConsent(),
 
     language: {
         default: 'fr',
         translations: {
             fr: {
                 consentModal: {
-                    title: 'Respect de votre vie privée',
-                    description: 'Le Club Touriste utilise des témoins (cookies) essentiels au fonctionnement du site ainsi que des témoins d\'analyse pour comprendre votre utilisation. Ces derniers ne sont activés qu\'avec votre consentement.',
+                    title: 'Nous respectons votre vie privée',
+                    description: 'Nous utilisons des témoins de navigation pour mesurer la fréquentation du site et améliorer votre expérience. Conformément à la Loi 25 du Québec, votre consentement est requis. Vous pouvez modifier vos préférences en tout temps.',
                     acceptAllBtn: 'Tout accepter',
-                    acceptNecessaryBtn: 'Tout refuser',
-                    showPreferencesBtn: 'Gérer mes préférences',
+                    acceptNecessaryBtn: 'Refuser',
+                    showPreferencesBtn: 'Gérer les préférences',
+                    footer: '<a href="/confidentialite">Politique de confidentialité</a>',
                 },
                 preferencesModal: {
-                    title: 'Gestion des témoins',
+                    title: 'Préférences de confidentialité',
                     acceptAllBtn: 'Tout accepter',
-                    acceptNecessaryBtn: 'Tout refuser',
-                    savePreferencesBtn: 'Enregistrer mes choix',
+                    acceptNecessaryBtn: 'Refuser',
+                    savePreferencesBtn: 'Enregistrer mes préférences',
                     closeIconLabel: 'Fermer',
                     sections: [
                         {
                             title: 'Utilisation des témoins',
-                            description: 'Conformément à la <strong>Loi 25 du Québec</strong> sur la protection des renseignements personnels, nous vous informons que ce site utilise des témoins de connexion (cookies). Vous pouvez accepter ou refuser chaque catégorie. Consultez notre <a href="/politique-de-confidentialite">politique de confidentialité</a> pour plus de détails.',
+                            description: 'Nous utilisons des témoins de navigation pour assurer le bon fonctionnement de notre site et, avec votre consentement, pour mesurer son utilisation. Vous pouvez accepter, refuser ou personnaliser votre choix ci-dessous.',
                         },
                         {
                             title: 'Témoins strictement nécessaires',
-                            description: 'Ces témoins sont essentiels au fonctionnement du site (navigation, sécurité, préférences de consentement). Ils ne collectent aucune donnée personnelle à des fins de suivi.',
+                            description: 'Ces témoins sont indispensables au bon fonctionnement du site (navigation, sécurité, mémorisation de vos préférences de consentement). Ils ne collectent aucune donnée personnelle à des fins de suivi.',
                             linkedCategory: CAT_NECESSARY,
                         },
                         {
                             title: 'Témoins d\'analyse (Google Analytics)',
-                            description: 'Ces témoins nous permettent de mesurer la fréquentation du site et de comprendre comment les visiteurs l\'utilisent afin d\'améliorer votre expérience. Les données sont anonymisées.',
+                            description: 'Ces témoins nous permettent de mesurer la fréquentation du site et de comprendre comment les visiteurs l\'utilisent afin d\'améliorer votre expérience. Sans votre consentement, seules des données anonymes et agrégées sont transmises (sans identifiant ni cookie persistant).',
                             linkedCategory: CAT_ANALYTICS,
                             cookieTable: {
                                 caption: 'Liste des témoins d\'analyse',
@@ -176,10 +136,10 @@ CookieConsent.run({
                                         expiration: '2 ans',
                                     },
                                     {
-                                        name: '_gid',
+                                        name: '_ga_*',
                                         domain: 'Google Analytics',
-                                        description: 'Identifiant unique anonyme pour la session en cours.',
-                                        expiration: '24 heures',
+                                        description: 'Conserve l\'état de la session pour GA4.',
+                                        expiration: '2 ans',
                                     },
                                 ],
                             },
