@@ -76,7 +76,9 @@
 html{scroll-behavior:smooth}
 body{background:var(--dark);color:var(--text-light);font-family:var(--font-body);font-size:19px;line-height:1.7;overflow-x:hidden}
 nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:.8rem 3rem;background:rgba(15,13,10,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
-.nav-logo{font-family:var(--font-display);font-size:1.3rem;letter-spacing:.12em;color:var(--gold);text-decoration:none;font-style:italic}
+.nav-logo{display:flex;align-items:center;text-decoration:none;height:54px}
+.nav-logo img{height:100%;width:auto;display:block;opacity:.92;transition:opacity .2s}
+.nav-logo:hover img{opacity:1}
 .nav-links{display:flex;gap:2.2rem;list-style:none}
 .nav-links a{font-family:var(--font-ui);font-size:.74rem;font-weight:400;letter-spacing:.16em;text-transform:uppercase;color:var(--text-muted);text-decoration:none;transition:color .2s}
 .nav-links a:hover,.nav-links a.active{color:var(--gold)}
@@ -150,12 +152,14 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 footer{background:var(--dark);border-top:1px solid var(--border);padding:3rem 2rem}
 .footer-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:2rem}
 .footer-logo{font-family:var(--font-display);font-size:1.1rem;font-style:italic;color:var(--gold);letter-spacing:.1em}
+.footer-logo-img{width:140px;height:auto;display:block;opacity:.85;transition:opacity .2s}
+.footer-logo-img:hover{opacity:1}
 .footer-copy{font-family:var(--font-ui);font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--text-muted)}
 .footer-social{display:flex;align-items:center;gap:1.2rem}
 .footer-social a{color:var(--text-muted);transition:color .2s;display:flex;align-items:center}
 .footer-social a:hover{color:var(--gold)}
 .footer-social svg{width:17px;height:17px;fill:currentColor}
-@media(max-width:900px){nav{padding:.8rem 1.5rem}.nav-links{display:none}.repas-grid{grid-template-columns:1fr}.sides-grid{grid-template-columns:1fr}.footer-inner{flex-direction:column;text-align:center}}
+@media(max-width:900px){nav{padding:.8rem 1.5rem}.nav-logo{height:42px}.nav-links{display:none}.repas-grid{grid-template-columns:1fr}.sides-grid{grid-template-columns:1fr}.footer-inner{flex-direction:column;text-align:center}.footer-logo-img{width:120px}}
 @media(max-width:600px){.page-header{padding:7rem 1.2rem 2rem}.container{padding:0 1.2rem}}
 .fade-up{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease}
 .fade-up.visible{opacity:1;transform:translateY(0)}
@@ -163,7 +167,7 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:3rem 2r
 </head>
 <body>
 <nav>
-  <a href="/" class="nav-logo">Club Touriste</a>
+  <a href="/" class="nav-logo" aria-label="Club Touriste — accueil"><img src="/logo-clubtouriste-cream.png" alt="Club Touriste"></a>
   <ul class="nav-links">
     <li><a href="/#histoire">Histoire</a></li>
     <li><a href="/menu/">Menu</a></li>
@@ -323,14 +327,14 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:3rem 2r
   <a href="https://booking.libroreserve.com/260400d6ace7af7/QC017120721223/seat" target="_blank" class="btn-primary">Réserver une table</a>
   <div class="cta-links">
     <a href="/menu/">Menu du soir</a>
-    <a href="/vins.html">Carte des vins</a>
+    <a href="/vins/">Carte des vins</a>
   </div>
   <a href="tel:+14503735290" class="cta-tel">(450) 373-5290</a>
 </div>
 
 <footer>
   <div class="footer-inner">
-    <div class="footer-logo">Club Touriste</div>
+    <a href="/" aria-label="Club Touriste — accueil"><img src="/logo-clubtouriste-cream.png" alt="Club Touriste" class="footer-logo-img" width="140" height="76" loading="lazy"></a>
     <div class="footer-copy">© 2026 Club Touriste Inc. · 133 Rue Victoria, Salaberry-de-Valleyfield · <a href="/politique-de-confidentialite" style="color:var(--text-muted);text-decoration:underline;text-underline-offset:3px">Confidentialité</a> · <a href="#" data-cc="show-preferencesModal" style="color:var(--text-muted);text-decoration:underline;text-underline-offset:3px">Gérer les témoins</a></div>
     <div class="footer-social">
       <a href="https://www.facebook.com/clubtouriste" target="_blank" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
