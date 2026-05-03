@@ -190,13 +190,19 @@
   }
 
   .nav-logo {
-    font-family: var(--font-display);
-    font-size: 1.3rem;
-    letter-spacing: 0.12em;
-    color: var(--gold);
+    display: flex;
+    align-items: center;
     text-decoration: none;
-    font-style: italic;
+    height: 54px;
   }
+  .nav-logo img {
+    height: 100%;
+    width: auto;
+    display: block;
+    opacity: 0.92;
+    transition: opacity 0.2s;
+  }
+  .nav-logo:hover img { opacity: 1; }
 
   .nav-links { display: flex; gap: 2.2rem; list-style: none; }
   .nav-links a { font-family: var(--font-ui); font-size: 0.74rem; font-weight: 400; letter-spacing: 0.16em; text-transform: uppercase; color: var(--text-muted); text-decoration: none; transition: color 0.2s; }
@@ -544,6 +550,8 @@
   footer { background: var(--dark); border-top: 1px solid var(--border); padding: 3rem 2rem; }
   .footer-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
   .footer-logo { font-family: var(--font-display); font-size: 1.1rem; font-style: italic; color: var(--gold); letter-spacing: 0.1em; }
+  .footer-logo-img { width: 140px; height: auto; display: block; opacity: 0.85; transition: opacity 0.2s; }
+  .footer-logo-img:hover { opacity: 1; }
   .footer-copy { font-family: var(--font-ui); font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-muted); }
   .footer-social { display: flex; align-items: center; gap: 1.2rem; }
   .footer-social a { color: var(--text-muted); transition: color 0.2s; display: flex; align-items: center; }
@@ -553,9 +561,11 @@
   /* RESPONSIVE */
   @media (max-width: 900px) {
     nav { padding: 0.8rem 1.5rem; }
+    .nav-logo { height: 42px; }
     .nav-links { display: none; }
     .legend-inner { flex-direction: column; align-items: flex-start; gap: 1rem; padding: 1.5rem; }
     .footer-inner { flex-direction: column; text-align: center; }
+    .footer-logo-img { width: 120px; }
   }
 
   @media (max-width: 600px) {
@@ -582,7 +592,7 @@
 
 <!-- NAV -->
 <nav>
-  <a href="/" class="nav-logo">Club Touriste</a>
+  <a href="/" class="nav-logo" aria-label="Club Touriste — accueil"><img src="/logo-clubtouriste-cream.png" alt="Club Touriste"></a>
   <ul class="nav-links">
     <li><a href="/#histoire">Histoire</a></li>
     <li><a href="/menu/" class="active">Menu</a></li>
@@ -822,7 +832,7 @@
 <!-- FOOTER -->
 <footer>
   <div class="footer-inner">
-    <div class="footer-logo">Club Touriste</div>
+    <a href="/" aria-label="Club Touriste — accueil"><img src="/logo-clubtouriste-cream.png" alt="Club Touriste" class="footer-logo-img" width="140" height="76" loading="lazy"></a>
     <div class="footer-copy">© 2026 Club Touriste Inc. · 133 Rue Victoria, Salaberry-de-Valleyfield · <a href="/politique-de-confidentialite" style="color:var(--text-muted);text-decoration:underline;text-underline-offset:3px">Confidentialité</a> · <a href="#" data-cc="show-preferencesModal" style="color:var(--text-muted);text-decoration:underline;text-underline-offset:3px">Gérer les témoins</a></div>
     <div class="footer-social">
       <a href="https://www.facebook.com/clubtouriste" target="_blank" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
