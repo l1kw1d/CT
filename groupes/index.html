@@ -38,7 +38,7 @@
 
 <title>Groupes & Événements privés | Club Touriste, Villa Cécilia, Salaberry-de-Valleyfield</title>
 <meta name="description" content="Réservez la Villa Cécilia pour vos événements privés : mariages, anniversaires, partys corporatifs, réceptions funéraires, baby showers, 5 à 7, retrouvailles. Jusqu'à 120 personnes. Salaberry-de-Valleyfield. (450) 373-5290.">
-<meta name="keywords" content="salle privée Valleyfield, événement privé Salaberry-de-Valleyfield, location salle groupe Suroît, réception mariage Valleyfield, party corporatif Montérégie, réception funéraire Valleyfield, salle anniversaire Valleyfield, baby shower restaurant Valleyfield, 5 à 7 corporatif Suroît, party de Noël entreprise Valleyfield, groupe restaurant Valleyfield, privatiser restaurant Montérégie">
+<meta name="keywords" content="salle privée Valleyfield, événement privé Salaberry-de-Valleyfield, location salle groupe Suroît, réception mariage Valleyfield, micro-mariage Montérégie, salle fiançailles Valleyfield, enterrement vie jeune fille Suroît, party corporatif Montérégie, réception funéraire Valleyfield, salle anniversaire Valleyfield, baby shower restaurant Valleyfield, 5 à 7 corporatif Suroît, party de Noël entreprise Valleyfield, gala souper-bénéfice Montérégie, AGA salle Valleyfield, conférence pharmaceutique Suroît, départ retraite restaurant Valleyfield, groupe restaurant Valleyfield, privatiser restaurant Montérégie">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://clubtouriste.ca/groupes/">
 <meta name="geo.region" content="CA-QC">
@@ -111,10 +111,18 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Quelle est la capacité maximale pour un événement privé au Club Touriste?",
+      "name": "Quelle est la capacité pour un groupe au Club Touriste?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "En privatisation complète des étages 2 et 3, la Villa Cécilia peut accueillir jusqu'à 120 personnes assises. Des configurations plus intimes sont possibles : salons privés pour groupes de 15 à 40 personnes, ou terrasse extérieure l'été (jusqu'à 60 personnes)."
+        "text": "Le minimum pour réserver en groupe est de 20 personnes. La capacité maximale est de 120 personnes en privatisation complète des étages 2 et 3. Le 3e étage seul accueille de 35 à 80 personnes. La terrasse peut accueillir des groupes l'été, et sa privatisation est possible à partir de 70 personnes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Y a-t-il des frais de salle ou de réservation?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Aucun frais de réservation ni de salle, sauf pour la privatisation du 3e étage seul (150 $). Pour toutes les autres configurations, aucun frais additionnel."
       }
     },
     {
@@ -122,15 +130,23 @@
       "name": "Quels types d'événements peut-on organiser au Club Touriste?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Tous les types de rassemblements privés : mariages et fiançailles, anniversaires (40e, 50e, 60e, 75e, 80e), anniversaires de mariage, baby showers, baptêmes et premières communions, retrouvailles familiales, partys de Noël corporatifs, 5 à 7, réunions d'affaires, lancements de produits, départs à la retraite, réceptions funéraires et commémorations."
+        "text": "Mariages et micro-mariages, anniversaires de mariage (25e, 50e), fiançailles et enterrements de vie de jeune fille ou de garçon, anniversaires (40e, 50e, 60e, 75e, 80e), baby showers et révélations de sexe, retrouvailles familiales, départs à la retraite, partys d'entreprise et 5 à 7 corporatifs, lancements de produits, lunchs d'affaires, conférences privées (pharmaceutique), galas et soupers-bénéfices, assemblées générales annuelles (AGA), partys de Noël et Temps des Fêtes, réceptions funéraires et commémorations."
       }
     },
     {
       "@type": "Question",
-      "name": "Faut-il fournir son propre traiteur?",
+      "name": "Quelles formules de repas sont offertes pour les groupes?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Non. Le Club Touriste est un restaurant gastronomique avec sa propre cuisine. Nous préparons tous les repas sur place. Nous proposons des menus de groupe adaptés (3 services, 4 services, cocktail dînatoire, buffet) avec options sans gluten, végétariennes et adaptées aux allergies."
+        "text": "Repas servi à table, buffet chaud, buffet froid, bar à pâtes, bar à poutine ou cocktail dînatoire. Pour les groupes de 30 personnes et plus, un menu restreint est obligatoire. Options sans gluten, végétariennes et adaptées aux allergies disponibles."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Êtes-vous ouverts les fins de semaine pour les groupes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Le Club Touriste peut ouvrir le samedi midi ou le dimanche pour les groupes de 40 personnes et plus, sur réservation."
       }
     },
     {
@@ -138,7 +154,7 @@
       "name": "Comment obtenir une soumission pour un événement?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Remplissez le formulaire de demande sur cette page ou appelez directement au (450) 373-5290. Nous répondons à toutes les demandes en moins de 24 heures ouvrables avec disponibilités, options de menu et fourchette de prix."
+        "text": "Remplissez le formulaire de demande sur cette page, écrivez-nous à resto@clubtouriste.ca ou appelez le (450) 373-5290."
       }
     },
     {
@@ -210,6 +226,28 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .lieu-label{font-family:var(--font-ui);font-size:.72rem;letter-spacing:.15em;text-transform:uppercase;color:var(--text-muted);line-height:1.5}
 
 /* SECTION : TYPES D'ÉVÉNEMENTS (grille principale) */
+/* BANNIÈRE SAISONNIÈRE TEMPS DES FÊTES */
+.season-banner{display:flex;align-items:center;justify-content:space-between;gap:2rem;background:linear-gradient(135deg,var(--dark-surface) 0%,var(--dark-mid) 100%);border:1px solid var(--gold-dark);padding:1.8rem 2.2rem;margin-top:1rem;margin-bottom:2.5rem;text-decoration:none;color:inherit;position:relative;overflow:hidden;transition:border-color .3s}
+.season-banner::before{content:'';position:absolute;top:0;left:0;width:4px;height:100%;background:var(--gold)}
+.season-banner:hover{border-color:var(--gold)}
+.season-banner-text{flex:1}
+.season-banner-eyebrow{font-family:var(--font-ui);font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:.5rem}
+.season-banner-title{font-family:var(--font-display);font-size:1.6rem;font-style:italic;color:var(--cream);margin-bottom:.4rem;line-height:1.2}
+.season-banner-desc{font-family:var(--font-body);font-size:1rem;color:var(--text-muted);line-height:1.5}
+.season-banner-cta{font-family:var(--font-ui);font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);border:1px solid var(--gold-dark);padding:.85rem 1.6rem;transition:all .2s;white-space:nowrap;flex-shrink:0}
+.season-banner:hover .season-banner-cta{background:var(--gold);color:var(--dark);border-color:var(--gold)}
+
+/* BANNIÈRE SAISONNIÈRE TEMPS DES FÊTES */
+.season-banner{display:flex;align-items:center;justify-content:space-between;gap:2rem;background:linear-gradient(135deg,var(--dark-surface) 0%,var(--dark-mid) 100%);border:1px solid var(--gold-dark);padding:1.8rem 2.2rem;margin-top:1rem;margin-bottom:2.5rem;text-decoration:none;color:inherit;position:relative;overflow:hidden;transition:border-color .3s}
+.season-banner::before{content:'';position:absolute;top:0;left:0;width:4px;height:100%;background:var(--gold)}
+.season-banner:hover{border-color:var(--gold)}
+.season-banner-text{flex:1}
+.season-banner-eyebrow{font-family:var(--font-ui);font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:.5rem}
+.season-banner-title{font-family:var(--font-display);font-size:1.7rem;font-style:italic;color:var(--cream);margin-bottom:.4rem;line-height:1.2}
+.season-banner-desc{font-family:var(--font-body);font-size:1rem;color:var(--text-muted);line-height:1.5}
+.season-banner-cta{font-family:var(--font-ui);font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);border:1px solid var(--gold-dark);padding:.85rem 1.6rem;transition:all .2s;white-space:nowrap;flex-shrink:0}
+.season-banner:hover .season-banner-cta{background:var(--gold);color:var(--dark);border-color:var(--gold)}
+
 .types-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:1rem}
 .type-card{background:var(--dark-surface);border:1px solid var(--border);padding:2.2rem 1.8rem;text-decoration:none;color:inherit;display:flex;flex-direction:column;position:relative;overflow:hidden;transition:border-color .3s,transform .3s}
 .type-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(to right,transparent,var(--gold),transparent);opacity:0;transition:opacity .3s}
@@ -295,6 +333,7 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:3rem 2r
   .section{padding:3.5rem 1.2rem}
   .types-grid{grid-template-columns:1fr}
   .lieu-grid{grid-template-columns:1fr 1fr}
+  .season-banner{flex-direction:column;align-items:flex-start;gap:1.2rem;padding:1.5rem 1.5rem 1.5rem 1.8rem}
   .form-grid{grid-template-columns:1fr}
   .form-field.full{grid-column:span 1}
   .form-submit{grid-column:span 1}
@@ -362,7 +401,7 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:3rem 2r
         <div class="lieu-label">Maison patrimoniale<br>style victorien</div>
       </div>
       <div class="lieu-item">
-        <div class="lieu-num">15</div>
+        <div class="lieu-num">20</div>
         <div class="lieu-label">Personnes minimum<br>pour groupe privé</div>
       </div>
     </div>
@@ -376,90 +415,142 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:3rem 2r
     <h2 class="section-title">Chaque <em>occasion</em> a sa place</h2>
     <p class="section-sub">Du party de bureau au mariage intime, du 50e anniversaire à la réception funéraire, la Villa Cécilia s'adapte à votre événement, votre groupe et votre budget.</p>
 
+    <!-- BANNIÈRE TEMPS DES FÊTES -->
+    <a href="/groupes/temps-des-fetes/" class="season-banner fade-up">
+      <div class="season-banner-text">
+        <div class="season-banner-eyebrow">Saisonnier · Réservez dès maintenant</div>
+        <div class="season-banner-title">Temps des Fêtes au Club Touriste</div>
+        <div class="season-banner-desc">Partys de bureau, soupers de Noël en famille, 5 à 7 des Fêtes, brunchs du jour de l'An. Les dates de décembre partent vite, planifiez à l'avance.</div>
+      </div>
+      <span class="season-banner-cta">Découvrir</span>
+    </a>
+
     <div class="types-grid fade-up">
 
-      <!-- MARIAGES -->
+      <!-- 1. MARIAGES & MICRO-MARIAGES -->
       <a href="/groupes/mariages/" class="type-card">
         <div class="type-card-eyebrow">Célébrations</div>
-        <div class="type-card-title">Mariages & fiançailles</div>
-        <div class="type-card-desc">Votre cérémonie ailleurs, votre souper chez nous. Réception intime ou grande fête, la Villa devient votre lieu pour la soirée.</div>
+        <div class="type-card-title">Mariages & micro-mariages</div>
+        <div class="type-card-desc">Votre cérémonie ailleurs, votre souper chez nous. Du mariage intime au grand rassemblement, la Villa devient votre lieu pour la soirée.</div>
         <ul class="type-card-list">
-          <li>Mariages 30 à 120 invités</li>
-          <li>Demandes en mariage privées</li>
-          <li>Fiançailles & engagements</li>
+          <li>Mariages 20 à 120 invités</li>
+          <li>Micro-mariages intimes</li>
           <li>Anniversaires de mariage (25e, 50e)</li>
+          <li>Renouvellement de vœux</li>
         </ul>
         <span class="type-card-link">En savoir plus <svg viewBox="0 0 24 1"><line x1="0" y1="0.5" x2="24" y2="0.5" stroke="currentColor"/></svg></span>
       </a>
 
-      <!-- ANNIVERSAIRES -->
+      <!-- 2. FIANÇAILLES & ENTERREMENTS DE VIE -->
+      <a href="/groupes/fiancailles-enterrements-de-vie/" class="type-card">
+        <div class="type-card-eyebrow">Célébrations</div>
+        <div class="type-card-title">Fiançailles & enterrements de vie</div>
+        <div class="type-card-desc">Une demande en mariage qui marquera, une fête de fiançailles inoubliable, un enterrement de vie de fille ou de garçon dans un cadre raffiné.</div>
+        <ul class="type-card-list">
+          <li>Demandes en mariage privées</li>
+          <li>Fêtes de fiançailles</li>
+          <li>Enterrements de vie de jeune fille</li>
+          <li>Enterrements de vie de garçon</li>
+        </ul>
+        <span class="type-card-link">En savoir plus <svg viewBox="0 0 24 1"><line x1="0" y1="0.5" x2="24" y2="0.5" stroke="currentColor"/></svg></span>
+      </a>
+
+      <!-- 3. ANNIVERSAIRES IMPORTANTS -->
       <a href="/groupes/anniversaires/" class="type-card">
         <div class="type-card-eyebrow">Célébrations</div>
-        <div class="type-card-title">Anniversaires & fêtes</div>
-        <div class="type-card-desc">Soulignez les grands chiffres comme ils méritent. Salon privé, menu adapté, gâteau, ambiance, tout est prêt pour vos invités.</div>
+        <div class="type-card-title">Anniversaires importants</div>
+        <div class="type-card-desc">Soulignez les grands chiffres comme ils méritent. Salon privé, menu adapté, gâteau permis sans frais, ambiance, tout est prêt pour vos invités.</div>
         <ul class="type-card-list">
           <li>40e, 50e, 60e, 75e, 80e</li>
           <li>Fêtes surprises</li>
-          <li>Retrouvailles familiales</li>
           <li>Réunions d'amis</li>
+          <li>Célébrations privées</li>
         </ul>
         <span class="type-card-link">En savoir plus <svg viewBox="0 0 24 1"><line x1="0" y1="0.5" x2="24" y2="0.5" stroke="currentColor"/></svg></span>
       </a>
 
-      <!-- CORPORATIF -->
+      <!-- 4. BABY SHOWERS & RÉVÉLATIONS -->
+      <a href="/groupes/baby-showers/" class="type-card">
+        <div class="type-card-eyebrow">Famille</div>
+        <div class="type-card-title">Baby showers & révélations</div>
+        <div class="type-card-desc">Les moments qui marquent une famille méritent un cadre à la hauteur. Brunch, lunch ou cocktail, menu adapté, espace privé.</div>
+        <ul class="type-card-list">
+          <li>Baby showers classiques</li>
+          <li>Révélations de sexe</li>
+          <li>Fêtes prénatales</li>
+          <li>Brunchs en famille</li>
+        </ul>
+        <span class="type-card-link">En savoir plus <svg viewBox="0 0 24 1"><line x1="0" y1="0.5" x2="24" y2="0.5" stroke="currentColor"/></svg></span>
+      </a>
+
+      <!-- 5. RETROUVAILLES FAMILIALES -->
+      <a href="/groupes/retrouvailles/" class="type-card">
+        <div class="type-card-eyebrow">Famille</div>
+        <div class="type-card-title">Retrouvailles familiales</div>
+        <div class="type-card-desc">Quand la famille se rassemble après des années ou simplement pour le plaisir. Un lieu chaleureux, une cuisine généreuse, du temps de qualité.</div>
+        <ul class="type-card-list">
+          <li>Retrouvailles familiales élargies</li>
+          <li>Rencontres entre générations</li>
+          <li>Réunions de cousins</li>
+          <li>Anciens collègues, anciens camarades</li>
+        </ul>
+        <span class="type-card-link">En savoir plus <svg viewBox="0 0 24 1"><line x1="0" y1="0.5" x2="24" y2="0.5" stroke="currentColor"/></svg></span>
+      </a>
+
+      <!-- 6. DÉPARTS À LA RETRAITE -->
+      <a href="/groupes/retraites/" class="type-card">
+        <div class="type-card-eyebrow">Famille</div>
+        <div class="type-card-title">Départs à la retraite</div>
+        <div class="type-card-desc">Soulignez une carrière entière, un départ qui mérite plus qu'un gâteau au bureau. Cadre élégant, repas servi ou cocktail, hommage en bonne et due forme.</div>
+        <ul class="type-card-list">
+          <li>Soupers de retraite</li>
+          <li>Cocktails de départ</li>
+          <li>Hommages de carrière</li>
+          <li>Célébrations entre collègues</li>
+        </ul>
+        <span class="type-card-link">En savoir plus <svg viewBox="0 0 24 1"><line x1="0" y1="0.5" x2="24" y2="0.5" stroke="currentColor"/></svg></span>
+      </a>
+
+      <!-- 7. CORPORATIF & 5 À 7 -->
       <a href="/groupes/corporatif/" class="type-card">
         <div class="type-card-eyebrow">Affaires</div>
-        <div class="type-card-title">Événements corporatifs</div>
-        <div class="type-card-desc">Party de Noël, 5 à 7, lancement de produit, réunion stratégique. Un lieu qui en met plein la vue à vos employés, clients ou partenaires.</div>
+        <div class="type-card-title">Corporatif & 5 à 7</div>
+        <div class="type-card-desc">Un lieu qui en met plein la vue à vos employés, clients ou partenaires. Loin des salles d'hôtel anonymes, plus près de ce qui marque les esprits.</div>
         <ul class="type-card-list">
-          <li>Partys de Noël & temps des fêtes</li>
+          <li>Partys d'entreprise</li>
           <li>5 à 7 corporatifs</li>
-          <li>Réunions d'affaires + lunch</li>
-          <li>Lancements & cocktails dînatoires</li>
-          <li>Départs à la retraite</li>
+          <li>Lancements de produits</li>
+          <li>Team building, soupers d'équipe</li>
+          <li>Lunchs d'affaires</li>
         </ul>
         <span class="type-card-link">En savoir plus <svg viewBox="0 0 24 1"><line x1="0" y1="0.5" x2="24" y2="0.5" stroke="currentColor"/></svg></span>
       </a>
 
-      <!-- FAMILLE -->
-      <a href="/groupes/famille/" class="type-card">
-        <div class="type-card-eyebrow">Famille</div>
-        <div class="type-card-title">Baby showers & baptêmes</div>
-        <div class="type-card-desc">Les moments qui marquent une famille méritent un cadre à la hauteur. Salon privé, brunch ou lunch, menu adapté pour tous les âges.</div>
+      <!-- 8. CONFÉRENCES, GALAS & AGA -->
+      <a href="/groupes/conferences-galas/" class="type-card">
+        <div class="type-card-eyebrow">Affaires</div>
+        <div class="type-card-title">Conférences, galas & AGA</div>
+        <div class="type-card-desc">Conférences pharmaceutiques, formations professionnelles, galas-bénéfices, assemblées générales. Salon privé, confidentialité, repas inclus.</div>
         <ul class="type-card-list">
-          <li>Baby showers</li>
-          <li>Révélations de sexe</li>
-          <li>Baptêmes & 1res communions</li>
-          <li>Confirmations</li>
-          <li>Retrouvailles familiales</li>
+          <li>Conférences pharmaceutiques</li>
+          <li>Formations professionnelles</li>
+          <li>Galas et soupers-bénéfices</li>
+          <li>Assemblées générales annuelles (AGA)</li>
+          <li>Présentations de produits</li>
         </ul>
         <span class="type-card-link">En savoir plus <svg viewBox="0 0 24 1"><line x1="0" y1="0.5" x2="24" y2="0.5" stroke="currentColor"/></svg></span>
       </a>
 
-      <!-- RÉCEPTION FUNÉRAIRE -->
+      <!-- 9. RÉCEPTIONS FUNÉRAIRES -->
       <a href="/groupes/reception-funeraire/" class="type-card">
         <div class="type-card-eyebrow">Hommage</div>
         <div class="type-card-title">Réceptions funéraires</div>
-        <div class="type-card-desc">Recevez vos proches dans un cadre paisible après la cérémonie. Nous nous occupons de tout, vous n'avez à vous soucier de rien.</div>
+        <div class="type-card-desc">Recevez vos proches dans un cadre paisible après la cérémonie. Formule buffet, nous nous occupons de tout, vous n'avez à vous soucier de rien.</div>
         <ul class="type-card-list">
           <li>Réception après obsèques</li>
           <li>Verre du souvenir</li>
           <li>Commémorations</li>
           <li>Délais courts acceptés</li>
-        </ul>
-        <span class="type-card-link">En savoir plus <svg viewBox="0 0 24 1"><line x1="0" y1="0.5" x2="24" y2="0.5" stroke="currentColor"/></svg></span>
-      </a>
-
-      <!-- TEMPS DES FÊTES -->
-      <a href="/groupes/temps-des-fetes/" class="type-card">
-        <div class="type-card-eyebrow">Saisonnier · Sept–Janvier</div>
-        <div class="type-card-title">Temps des Fêtes</div>
-        <div class="type-card-desc">Party de bureau, souper de Noël en famille, 5 à 7 des Fêtes. Réservez tôt, les dates de décembre partent vite.</div>
-        <ul class="type-card-list">
-          <li>Partys de bureau (déc)</li>
-          <li>Soupers de famille</li>
-          <li>5 à 7 des Fêtes</li>
-          <li>Brunchs du jour de l'An</li>
         </ul>
         <span class="type-card-link">En savoir plus <svg viewBox="0 0 24 1"><line x1="0" y1="0.5" x2="24" y2="0.5" stroke="currentColor"/></svg></span>
       </a>
@@ -499,7 +590,7 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:3rem 2r
       <div class="why-item">
         <div class="why-item-num">05.</div>
         <div class="why-item-title">Configurations flexibles</div>
-        <div class="why-item-desc">De 15 à 120 personnes. Salons privés par étage pour les petits groupes, ou privatisation complète. Terrasse extérieure l'été pour cocktails et brunchs.</div>
+        <div class="why-item-desc">De 20 à 120 personnes. Privatisation du 3e étage seul (35 à 80 personnes), ou des étages 2 et 3 ensemble. Terrasse extérieure pour groupes l'été, privatisable à partir de 70 personnes. Ouvertures spéciales le samedi midi ou le dimanche possibles pour groupes de 40 et plus.</div>
       </div>
       <div class="why-item">
         <div class="why-item-num">06.</div>
@@ -550,7 +641,7 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:3rem 2r
     <p class="section-sub">Réponse sous 24 heures ouvrables. Aucun engagement.</p>
 
     <div class="form-wrapper">
-      <form action="/api/groupes-demande" method="POST" class="form-grid">
+      <form id="form-groupes" class="form-grid" onsubmit="return envoyerDemandeGroupe(event)">
         <div class="form-field">
           <label for="nom">Nom complet *</label>
           <input type="text" id="nom" name="nom" required>
@@ -568,17 +659,23 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:3rem 2r
           <label for="type">Type d'événement *</label>
           <select id="type" name="type" required>
             <option value="">Choisir...</option>
-            <option>Mariage / Fiançailles</option>
-            <option>Anniversaire (40e, 50e, etc.)</option>
-            <option>Anniversaire de mariage</option>
-            <option>Baby shower / Révélation</option>
-            <option>Baptême / 1re communion</option>
+            <option>Mariage / Micro-mariage</option>
+            <option>Anniversaire de mariage (25e, 50e)</option>
+            <option>Fiançailles / Demande en mariage</option>
+            <option>Enterrement de vie de jeune fille</option>
+            <option>Enterrement de vie de garçon</option>
+            <option>Anniversaire (40e, 50e, 60e, 75e, 80e)</option>
+            <option>Baby shower / Révélation de sexe</option>
             <option>Retrouvailles familiales</option>
-            <option>Party de Noël / corporatif</option>
-            <option>5 à 7 corporatif</option>
-            <option>Réunion d'affaires + repas</option>
-            <option>Lancement de produit / cocktail</option>
             <option>Départ à la retraite</option>
+            <option>Party d'entreprise</option>
+            <option>5 à 7 corporatif</option>
+            <option>Lancement de produit / Cocktail dînatoire</option>
+            <option>Lunch / Réunion d'affaires</option>
+            <option>Conférence privée (pharmaceutique, etc.)</option>
+            <option>Gala / Souper-bénéfice</option>
+            <option>Assemblée générale annuelle (AGA)</option>
+            <option>Party de Noël / Temps des Fêtes</option>
             <option>Réception funéraire</option>
             <option>Autre</option>
           </select>
@@ -587,11 +684,11 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:3rem 2r
           <label for="nb">Nombre de personnes *</label>
           <select id="nb" name="nb" required>
             <option value="">Choisir...</option>
-            <option>15 – 25</option>
-            <option>26 – 40</option>
-            <option>41 – 60</option>
-            <option>61 – 80</option>
-            <option>81 – 120</option>
+            <option>20 à 30</option>
+            <option>30 à 50</option>
+            <option>50 à 70</option>
+            <option>70 à 90</option>
+            <option>90 à 120</option>
             <option>Plus de 120</option>
           </select>
         </div>
@@ -601,14 +698,16 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:3rem 2r
           <input type="date" id="date" name="date" required>
         </div>
         <div class="form-field">
-          <label for="budget">Budget par personne (indicatif)</label>
-          <select id="budget" name="budget">
-            <option value="">Préfère ne pas dire</option>
-            <option>50 $ – 75 $</option>
-            <option>75 $ – 125 $</option>
-            <option>125 $ – 200 $</option>
-            <option>200 $ et plus</option>
-            <option>À discuter</option>
+          <label for="formule">Formule souhaitée (si connue)</label>
+          <select id="formule" name="formule">
+            <option value="">À discuter</option>
+            <option>Repas servi à table (3 ou 4 services)</option>
+            <option>Buffet chaud</option>
+            <option>Buffet froid</option>
+            <option>Bar à pâtes</option>
+            <option>Bar à poutine</option>
+            <option>Cocktail dînatoire</option>
+            <option>Pas encore décidé</option>
           </select>
         </div>
 
@@ -621,7 +720,8 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:3rem 2r
           <button type="submit">Envoyer ma demande</button>
         </div>
         <div class="form-helper">
-          Pour une demande urgente, appelez directement : <a href="tel:+14503735290">(450) 373-5290</a>
+          Vous préférez écrire directement? <a href="mailto:resto@clubtouriste.ca">resto@clubtouriste.ca</a><br>
+          Pour une demande urgente : <a href="tel:+14503735290">(450) 373-5290</a>
         </div>
       </form>
     </div>
@@ -636,36 +736,44 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:3rem 2r
 
     <div class="faq-list">
       <details class="faq-item">
-        <summary class="faq-q">Quelle est la capacité maximale?</summary>
-        <div class="faq-a">En privatisation complète des étages 2 et 3, jusqu'à 120 personnes assises. Configurations plus intimes possibles : salons privés pour 15 à 40, ou terrasse extérieure l'été (jusqu'à 60).</div>
+        <summary class="faq-q">Quelle est la capacité pour un groupe?</summary>
+        <div class="faq-a">Le minimum pour réserver en groupe est de 20 personnes. La capacité maximale est de 120 personnes en privatisation complète des étages 2 et 3. Le 3e étage seul accueille de 35 à 80 personnes. La terrasse peut accueillir des groupes l'été, et sa privatisation est possible à partir de 70 personnes.</div>
       </details>
       <details class="faq-item">
-        <summary class="faq-q">Faut-il fournir notre propre traiteur?</summary>
-        <div class="faq-a">Non. Le Club Touriste est un restaurant gastronomique avec sa propre cuisine. Tous les repas sont préparés sur place. Nous proposons des menus de groupe adaptés (3 ou 4 services, cocktail dînatoire, buffet) avec options sans gluten, végétariennes et pour allergies.</div>
+        <summary class="faq-q">Y a-t-il des frais de salle ou de réservation?</summary>
+        <div class="faq-a">Aucun frais de réservation ni de salle, sauf pour la privatisation du 3e étage seul (150 $). Pour toutes les autres configurations, aucun frais additionnel.</div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">Quelles formules de repas sont offertes?</summary>
+        <div class="faq-a">Repas servi à table, buffet chaud, buffet froid, bar à pâtes, bar à poutine, ou cocktail dînatoire. Pour les groupes de 30 personnes et plus, un menu restreint est obligatoire (sélection adaptée pour faciliter le service). Options sans gluten, végétariennes et pour allergies disponibles.</div>
       </details>
       <details class="faq-item">
         <summary class="faq-q">Peut-on apporter notre propre vin?</summary>
-        <div class="faq-a">Non. Nous avons un bar complet sur place avec carte des vins, bières en fût, cocktails signatures, importations privées et options sans alcool. Aucun BYOB n'est requis.</div>
-      </details>
-      <details class="faq-item">
-        <summary class="faq-q">Y a-t-il du stationnement?</summary>
-        <div class="faq-a">Oui. Stationnement disponible sur place et dans les rues avoisinantes. Pour les très gros groupes, nous pouvons vous suggérer des solutions complémentaires.</div>
-      </details>
-      <details class="faq-item">
-        <summary class="faq-q">Combien à l'avance faut-il réserver?</summary>
-        <div class="faq-a">Pour les mariages et partys de Noël (décembre) : 4 à 8 mois à l'avance. Pour les autres événements : 1 à 3 mois idéalement. Pour les réceptions funéraires, nous acceptons les délais courts (quelques jours).</div>
+        <div class="faq-a">Non. Nous avons un bar complet sur place avec carte des vins, bières en fût, cocktails signatures, importations privées et options sans alcool. Aucun BYOB.</div>
       </details>
       <details class="faq-item">
         <summary class="faq-q">Peut-on apporter notre propre gâteau?</summary>
-        <div class="faq-a">Oui, pour les gâteaux de mariage ou d'anniversaire spécialement commandés. Frais de coupe et service à discuter selon l'événement.</div>
+        <div class="faq-a">Oui. Tous les groupes peuvent apporter leur gâteau d'anniversaire, de mariage ou autre, sans frais supplémentaires.</div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">Êtes-vous ouverts les fins de semaine pour les groupes?</summary>
+        <div class="faq-a">Nous pouvons ouvrir le samedi midi ou le dimanche pour les groupes de 40 personnes et plus. Nos horaires habituels sont ceux du restaurant.</div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">Combien à l'avance faut-il réserver?</summary>
+        <div class="faq-a">Pour les mariages et partys de Noël (décembre) : 4 à 8 mois à l'avance. Pour les autres événements : 1 à 3 mois idéalement. Pour les réceptions funéraires, nous acceptons les délais courts.</div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">Y a-t-il du stationnement?</summary>
+        <div class="faq-a">Oui. Stationnement disponible sur place et dans les rues avoisinantes.</div>
       </details>
       <details class="faq-item">
         <summary class="faq-q">Le Club Touriste est-il accessible aux personnes à mobilité réduite?</summary>
-        <div class="faq-a">Le rez-de-chaussée et la terrasse sont accessibles. Les étages 2 et 3 sont accessibles par escalier (maison patrimoniale 1901, pas d'ascenseur). Nous adaptons l'événement selon les besoins de vos invités.</div>
+        <div class="faq-a">La Villa Cécilia est une maison patrimoniale construite en 1901. Le bâtiment n'est pas adapté aux personnes à mobilité réduite. Si vous avez des invités concernés, contactez-nous pour discuter des options.</div>
       </details>
       <details class="faq-item">
-        <summary class="faq-q">Quels modes de paiement acceptez-vous?</summary>
-        <div class="faq-a">Carte de crédit, virement Interac, chèque (entreprises). Un dépôt est demandé à la signature du contrat, le solde le jour de l'événement ou par facturation pour les comptes corporatifs.</div>
+        <summary class="faq-q">Comment obtenir une soumission?</summary>
+        <div class="faq-a">Remplissez le formulaire sur cette page, écrivez-nous à resto@clubtouriste.ca, ou appelez au (450) 373-5290. Nous répondons dans les meilleurs délais avec disponibilités, options de menu et estimation de coût.</div>
       </details>
     </div>
   </div>
@@ -690,6 +798,42 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.1 });
 document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+// Construit un mailto pré-rempli avec les champs du formulaire et ouvre le client courriel du visiteur
+function envoyerDemandeGroupe(e) {
+  e.preventDefault();
+
+  const f = document.getElementById('form-groupes');
+  const nom = f.nom.value.trim();
+  const tel = f.telephone.value.trim();
+  const courriel = f.courriel.value.trim();
+  const type = f.type.value;
+  const nb = f.nb.value;
+  const date = f.date.value;
+  const formule = f.formule.value || 'À discuter';
+  const message = f.message.value.trim() || '(aucun détail supplémentaire)';
+
+  const sujet = `Demande de groupe - ${type} - ${nom}`;
+
+  const corps =
+    `Bonjour,\n\n` +
+    `J'aimerais obtenir une soumission pour un événement de groupe au Club Touriste.\n\n` +
+    `COORDONNÉES\n` +
+    `Nom : ${nom}\n` +
+    `Téléphone : ${tel}\n` +
+    `Courriel : ${courriel}\n\n` +
+    `DÉTAILS DE L'ÉVÉNEMENT\n` +
+    `Type d'événement : ${type}\n` +
+    `Nombre de personnes : ${nb}\n` +
+    `Date souhaitée : ${date}\n` +
+    `Formule souhaitée : ${formule}\n\n` +
+    `MESSAGE\n${message}\n\n` +
+    `Merci,\n${nom}`;
+
+  const mailto = `mailto:resto@clubtouriste.ca?subject=${encodeURIComponent(sujet)}&body=${encodeURIComponent(corps)}`;
+  window.location.href = mailto;
+  return false;
+}
 </script>
 
 </body>
