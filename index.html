@@ -40,8 +40,8 @@
 <link rel="icon" href="/favicon.ico">
 <meta name="theme-color" content="#0F0D0A">
 <title>Club Touriste | Restaurant Gastronomique à Salaberry-de-Valleyfield</title>
-<meta name="description" content="Restaurant gastronomique au bord du canal de Beauharnois. Filet mignon AAA, fruits de mer, expérience culinaire unique dans une maison victorienne centenaire. Options végétariennes et sans gluten. Réservez au (450) 373-5290.">
-<meta name="keywords" content="restaurant Valleyfield, restaurant gastronomique Salaberry-de-Valleyfield, Club Touriste, restaurant canal Beauharnois, restaurant Montérégie, filet mignon Valleyfield, restaurant romantique Valleyfield, souper occasion spéciale Valleyfield, restaurant sans gluten Valleyfield, restaurant végétarien Montérégie, salle privée Valleyfield, événement corporatif Valleyfield">
+<meta name="description" content="Restaurant gastronomique au bord du canal de Beauharnois. Filet mignon AAA, fruits de mer, mariages, partys de Noël, événements corporatifs dans une maison victorienne centenaire. Réservez au (450) 373-5290.">
+<meta name="keywords" content="restaurant Valleyfield, restaurant gastronomique Salaberry-de-Valleyfield, Club Touriste, restaurant canal Beauharnois, restaurant Montérégie, filet mignon Valleyfield, restaurant romantique Valleyfield, souper occasion spéciale Valleyfield, restaurant sans gluten Valleyfield, restaurant végétarien Montérégie, salle privée Valleyfield, événement corporatif Valleyfield, salle mariage Valleyfield, réception mariage Suroît, party de Noël Valleyfield, 5 à 7 corporatif Valleyfield, salle anniversaire Valleyfield, baby shower Valleyfield, départ retraite Valleyfield, micro-mariage Valleyfield">
 <meta name="author" content="Club Touriste">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <meta name="language" content="fr-CA">
@@ -53,7 +53,7 @@
 <meta property="og:type" content="restaurant">
 <meta property="og:site_name" content="Club Touriste">
 <meta property="og:title" content="Club Touriste — Gastronomie & Histoire à Valleyfield">
-<meta property="og:description" content="Une expérience culinaire unique dans une maison victorienne centenaire au bord du canal de Beauharnois. Filet mignon, fruits de mer, cocktails signatures. Réservez votre table.">
+<meta property="og:description" content="Une expérience culinaire unique dans une maison victorienne centenaire au bord du canal de Beauharnois. Mariages, partys de Noël, événements corporatifs, soupers d'occasion. Réservez votre table.">
 <meta property="og:url" content="https://clubtouriste.ca/">
 <meta property="og:image" content="https://clubtouriste.ca/og-image.png">
 <meta property="og:image:width" content="1200">
@@ -100,6 +100,33 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .nav-social svg{width:17px;height:17px;fill:currentColor}
 .nav-reserve{font-family:var(--font-ui);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--dark);background:var(--gold);padding:.55rem 1.4rem;text-decoration:none;transition:background .2s}
 .nav-reserve:hover{background:var(--gold-light)}
+.nav-burger{display:none;background:none;border:none;cursor:pointer;padding:.5rem;margin-left:.6rem;color:var(--text-light);transition:color .2s}
+.nav-burger:hover{color:var(--gold)}
+.nav-burger svg{width:24px;height:24px;display:block}
+.mobile-menu{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(15,13,10,.98);backdrop-filter:blur(20px);z-index:200;display:flex;flex-direction:column;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .35s ease}
+.mobile-menu.is-open{opacity:1;pointer-events:auto}
+.mobile-menu-close{position:absolute;top:1.3rem;right:1.3rem;background:none;border:none;cursor:pointer;padding:.5rem;color:var(--text-light);transition:color .2s}
+.mobile-menu-close:hover{color:var(--gold)}
+.mobile-menu-close svg{width:28px;height:28px;display:block}
+.mobile-menu-list{list-style:none;padding:0;margin:0;text-align:center}
+.mobile-menu-list li{margin:1.3rem 0;opacity:0;transform:translateY(20px);transition:opacity .4s ease,transform .4s ease}
+.mobile-menu.is-open .mobile-menu-list li{opacity:1;transform:translateY(0)}
+.mobile-menu.is-open .mobile-menu-list li:nth-child(1){transition-delay:.08s}
+.mobile-menu.is-open .mobile-menu-list li:nth-child(2){transition-delay:.14s}
+.mobile-menu.is-open .mobile-menu-list li:nth-child(3){transition-delay:.2s}
+.mobile-menu.is-open .mobile-menu-list li:nth-child(4){transition-delay:.26s}
+.mobile-menu.is-open .mobile-menu-list li:nth-child(5){transition-delay:.32s}
+.mobile-menu.is-open .mobile-menu-list li:nth-child(6){transition-delay:.38s}
+.mobile-menu-list a{font-family:var(--font-display);font-size:1.7rem;font-style:italic;color:var(--cream);text-decoration:none;transition:color .2s;letter-spacing:.02em}
+.mobile-menu-list a:hover,.mobile-menu-list a:focus{color:var(--gold)}
+.mobile-menu-footer{margin-top:2.5rem;display:flex;flex-direction:column;align-items:center;gap:1.5rem}
+.mobile-menu-reserve{font-family:var(--font-ui);font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--dark);background:var(--gold);padding:1rem 2.5rem;text-decoration:none;transition:background .2s}
+.mobile-menu-reserve:hover{background:var(--gold-light)}
+.mobile-menu-social{display:flex;gap:1.6rem;align-items:center}
+.mobile-menu-social a{color:var(--text-muted);transition:color .2s;display:flex;align-items:center}
+.mobile-menu-social a:hover{color:var(--gold)}
+.mobile-menu-social svg{width:22px;height:22px;fill:currentColor}
+body.menu-open{overflow:hidden}
 .hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:8rem 2rem 5rem;position:relative;overflow:hidden}
 .hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 60% 50% at 50% 100%,rgba(201,169,110,.08) 0%,transparent 70%),radial-gradient(ellipse 80% 60% at 50% -10%,rgba(201,169,110,.04) 0%,transparent 60%)}
 .hero-lines{position:absolute;inset:0;background-image:linear-gradient(rgba(201,169,110,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(201,169,110,.04) 1px,transparent 1px);background-size:80px 80px;mask-image:radial-gradient(ellipse 70% 70% at 50% 50%,black,transparent)}
@@ -207,7 +234,7 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:3rem 2r
 .footer-social a{color:var(--text-muted);transition:color .2s;display:flex;align-items:center}
 .footer-social a:hover{color:var(--gold)}
 .footer-social svg{width:17px;height:17px;fill:currentColor}
-@media(max-width:900px){nav{padding:.8rem 1.5rem}.nav-logo{height:42px}.nav-links{display:none}.nav-social{margin-right:1rem;gap:.8rem}.history-grid{grid-template-columns:1fr;gap:3rem}.preview-grid{grid-template-columns:1fr}.promos-grid{grid-template-columns:1fr}.experience-grid{grid-template-columns:1fr}.events-grid{grid-template-columns:1fr}.events-visual{order:-1}.contact-grid{grid-template-columns:1fr}.footer-inner{flex-direction:column;text-align:center}}
+@media(max-width:900px){nav{padding:.8rem 1.5rem}.nav-logo{height:42px}.nav-links{display:none}.nav-social{display:none}.nav-reserve{display:none}.nav-burger{display:flex;align-items:center}.history-grid{grid-template-columns:1fr;gap:3rem}.preview-grid{grid-template-columns:1fr}.promos-grid{grid-template-columns:1fr}.experience-grid{grid-template-columns:1fr}.events-grid{grid-template-columns:1fr}.events-visual{order:-1}.contact-grid{grid-template-columns:1fr}.footer-inner{flex-direction:column;text-align:center}}
 @media(max-width:600px){section{padding:5rem 1.2rem}.hero{padding:7rem 1.2rem 4rem}.hero-ctas{flex-direction:column}.hero-bottom{display:none}.reservation-ctas{flex-direction:column}.promo-card{aspect-ratio:3/4}.hero-logo{width:88vw}.footer-logo-img{width:120px}}
 .fade-up{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
 .fade-up.visible{opacity:1;transform:translateY(0)}
@@ -221,7 +248,7 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:3rem 2r
     <li><a href="/menu/">Menu</a></li>
     <li><a href="/midi/">Midi</a></li>
     <li><a href="#experience">Expérience</a></li>
-    <li><a href="#evenements">Événements</a></li>
+    <li><a href="/groupes/">Groupes</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
   <div class="nav-right">
@@ -231,8 +258,33 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:3rem 2r
       <a href="https://www.tiktok.com/@clubtouriste" target="_blank" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 0010.86 4.48v-7.15a8.16 8.16 0 005.58 2.18v-3.44a4.85 4.85 0 01-1-.1z"/></svg></a>
     </div>
     <a href="https://booking.libroreserve.com/260400d6ace7af7/QC017120721223/seat" target="_blank" class="nav-reserve">Réserver</a>
+    <button class="nav-burger" id="navBurger" aria-label="Ouvrir le menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+    </button>
   </div>
 </nav>
+
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Fermer le menu">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+  </button>
+  <ul class="mobile-menu-list">
+    <li><a href="#histoire">Histoire</a></li>
+    <li><a href="/menu/">Menu</a></li>
+    <li><a href="/midi/">Midi</a></li>
+    <li><a href="/groupes/">Groupes</a></li>
+    <li><a href="#evenements">Événements</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="mobile-menu-footer">
+    <a href="https://booking.libroreserve.com/260400d6ace7af7/QC017120721223/seat" target="_blank" class="mobile-menu-reserve">Réserver</a>
+    <div class="mobile-menu-social">
+      <a href="https://www.facebook.com/clubtouriste" target="_blank" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+      <a href="https://www.instagram.com/clubtouriste" target="_blank" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+      <a href="https://www.tiktok.com/@clubtouriste" target="_blank" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 0010.86 4.48v-7.15a8.16 8.16 0 005.58 2.18v-3.44a4.85 4.85 0 01-1-.1z"/></svg></a>
+    </div>
+  </div>
+</div>
 
 <section id="accueil" class="hero">
   <div class="hero-bg"></div>
@@ -414,6 +466,17 @@ const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
 }, { threshold: 0.1 });
 document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+// Mobile menu
+const navBurger = document.getElementById('navBurger');
+const mobileMenu = document.getElementById('mobileMenu');
+const mobileMenuClose = document.getElementById('mobileMenuClose');
+function openMenu(){mobileMenu.classList.add('is-open');mobileMenu.setAttribute('aria-hidden','false');navBurger.setAttribute('aria-expanded','true');document.body.classList.add('menu-open');}
+function closeMenu(){mobileMenu.classList.remove('is-open');mobileMenu.setAttribute('aria-hidden','true');navBurger.setAttribute('aria-expanded','false');document.body.classList.remove('menu-open');}
+navBurger.addEventListener('click',openMenu);
+mobileMenuClose.addEventListener('click',closeMenu);
+mobileMenu.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeMenu));
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&mobileMenu.classList.contains('is-open'))closeMenu();});
 </script>
 </body>
 </html>
