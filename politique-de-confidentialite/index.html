@@ -11,7 +11,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="icon" href="/favicon.ico">
-<meta name="theme-color" content="#0F0D0A">
+<meta name="theme-color" content="#F2E5DE">
 
 <!-- ═══ Loi 25 — Consentement cookies ═══ -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css">
@@ -30,10 +30,22 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{--gold:#C9A96E;--gold-light:#E8D5A3;--gold-dark:#9B7A40;--cream:#F5F0E8;--dark:#0F0D0A;--dark-mid:#1A1712;--dark-surface:#231F1A;--dark-card:#2A2520;--text-light:#F0EAE0;--text-muted:#D5CDBF;--border:rgba(201,169,110,0.25);--font-display:'Playfair Display',Georgia,serif;--font-body:'Cormorant Garamond',Georgia,serif;--font-ui:'Jost',sans-serif}
+/* ═══ Palette « Parchemin » — thème clair canonique (voir DESIGN.md) ═══ */
+:root{
+  --gold:#946B4C; --gold-light:#B0875E; --gold-dark:#775840;
+  --rose:#9F6950; --rose-deep:#855742;
+  --sage:#717656; --sage-deep:#5B6043; --green:#575C3D;
+  --cream:#28221F;
+  --dark:#F2E5DE; --dark-mid:#E9DAD3; --dark-surface:#EBE1DB; --dark-card:#E4D6CE;
+  --text-light:#28221F; --text-muted:#6E6053;
+  --border:rgba(40,34,31,0.16);
+  --font-display:'Playfair Display',Georgia,serif;
+  --font-body:'Cormorant Garamond',Georgia,serif;
+  --font-ui:'Jost',sans-serif;
+}
 html{scroll-behavior:smooth}
 body{background:var(--dark);color:var(--text-light);font-family:var(--font-body);font-size:19px;line-height:1.7;overflow-x:hidden}
-nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:.8rem 3rem;background:rgba(15,13,10,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:.8rem 3rem;background:rgba(242,231,220,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
 .nav-logo{display:flex;align-items:center;text-decoration:none;height:54px}
 .nav-logo img{height:100%;width:auto;display:block;opacity:.92;transition:opacity .2s}
 .nav-logo:hover img{opacity:1}
@@ -41,19 +53,19 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .nav-links a{font-family:var(--font-ui);font-size:.74rem;font-weight:400;letter-spacing:.16em;text-transform:uppercase;color:var(--text-muted);text-decoration:none;transition:color .2s}
 .nav-links a:hover{color:var(--gold)}
 .nav-right{display:flex;align-items:center}
-.nav-reserve{font-family:var(--font-ui);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--dark);background:var(--gold);padding:.55rem 1.4rem;text-decoration:none;transition:background .2s}
-.nav-reserve:hover{background:var(--gold-light)}
+.nav-reserve{font-family:var(--font-ui);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--dark);background:var(--green);padding:.55rem 1.4rem;text-decoration:none;transition:background .2s}
+.nav-reserve:hover{background:var(--rose-deep)}
 .policy{max-width:760px;margin:0 auto;padding:7rem 2rem 5rem}
 .policy-header{text-align:center;padding-bottom:2.5rem;margin-bottom:2.5rem;border-bottom:1px solid var(--border)}
 .policy-header h1{font-family:var(--font-display);font-size:clamp(2rem,5vw,3rem);font-weight:400;color:var(--cream);letter-spacing:.02em;margin-bottom:.5rem}
-.policy-header h1 em{font-style:italic;color:var(--gold)}
+.policy-header h1 em{font-style:italic;color:var(--rose)}
 .policy-header .update{font-family:var(--font-ui);font-size:.7rem;letter-spacing:.25em;text-transform:uppercase;color:var(--gold-dark);margin-top:1rem;display:inline-block}
 h2{font-family:var(--font-display);font-size:1.45rem;font-weight:400;color:var(--cream);margin:2.5rem 0 .75rem;padding-top:1.5rem;border-top:1px solid var(--border)}
 h2:first-of-type{border-top:none;padding-top:0}
-h3{font-family:var(--font-ui);font-size:.8rem;font-weight:500;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);margin:1.5rem 0 .5rem}
+h3{font-family:var(--font-ui);font-size:.8rem;font-weight:500;letter-spacing:.15em;text-transform:uppercase;color:var(--gold-dark);margin:1.5rem 0 .5rem}
 p{margin-bottom:1rem;color:var(--text-muted);font-style:italic}
-a{color:var(--gold);text-decoration:underline;text-underline-offset:3px;transition:color .2s}
-a:hover{color:var(--gold-light)}
+a{color:var(--gold-dark);text-decoration:underline;text-underline-offset:3px;transition:color .2s}
+a:hover{color:var(--gold)}
 ul{margin:.5rem 0 1rem 1.25rem;color:var(--text-muted);font-style:italic}
 li{margin-bottom:.4rem}
 strong{color:var(--text-light);font-weight:400}
@@ -61,12 +73,12 @@ strong{color:var(--text-light);font-weight:400}
 .info-card p{margin-bottom:.3rem}
 table{width:100%;border-collapse:collapse;margin:1rem 0 1.5rem;font-size:.9rem}
 thead{background:var(--dark-card)}
-th{padding:.65rem .75rem;text-align:left;font-family:var(--font-ui);font-weight:500;font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:var(--gold);border-bottom:1px solid var(--border)}
-td{padding:.6rem .75rem;border-bottom:1px solid rgba(201,169,110,.1);color:var(--text-muted);font-style:italic}
+th{padding:.65rem .75rem;text-align:left;font-family:var(--font-ui);font-weight:500;font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:var(--gold-dark);border-bottom:1px solid var(--border)}
+td{padding:.6rem .75rem;border-bottom:1px solid var(--border);color:var(--text-muted);font-style:italic}
 tbody tr:last-child td{border-bottom:none}
-code{font-size:.85em;color:var(--gold-light);background:var(--dark-surface);padding:.15em .4em;border-radius:2px}
-.consent-btn{display:inline-block;margin-top:.5rem;padding:.7rem 1.5rem;background:var(--gold);color:var(--dark);border:none;font-family:var(--font-ui);font-size:.72rem;font-weight:500;letter-spacing:.16em;text-transform:uppercase;cursor:pointer;text-decoration:none;transition:background .2s}
-.consent-btn:hover{background:var(--gold-light);color:var(--dark)}
+code{font-size:.85em;color:var(--gold-dark);background:var(--dark-card);padding:.15em .4em;border-radius:2px}
+.consent-btn{display:inline-block;margin-top:.5rem;padding:.7rem 1.5rem;background:var(--green);color:var(--dark);border:none;font-family:var(--font-ui);font-size:.72rem;font-weight:500;letter-spacing:.16em;text-transform:uppercase;cursor:pointer;text-decoration:none;transition:background .2s}
+.consent-btn:hover{background:var(--rose-deep);color:var(--dark)}
 footer{background:var(--dark);border-top:1px solid var(--border);padding:3rem 2rem}
 .footer-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:2rem}
 .footer-logo{font-family:var(--font-display);font-size:1.1rem;font-style:italic;color:var(--gold);letter-spacing:.1em}
@@ -75,12 +87,13 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:3rem 2r
 .footer-copy{font-family:var(--font-ui);font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--text-muted)}
 .footer-copy a{color:var(--text-muted);text-decoration:underline;text-underline-offset:3px}
 @media(max-width:900px){nav{padding:.8rem 1.5rem}.nav-logo{height:42px}.nav-links{display:none}.policy{padding:6rem 1.2rem 3rem}table{font-size:.8rem}th,td{padding:.5rem}.footer-inner{flex-direction:column;text-align:center}.footer-logo-img{width:120px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 </style>
 </head>
 <body>
 
 <nav>
-  <a href="/" class="nav-logo" aria-label="Club Touriste — accueil"><img src="/logo-clubtouriste-cream.png" alt="Club Touriste"></a>
+  <a href="/" class="nav-logo" aria-label="Club Touriste — accueil"><img src="/logo-clubtouriste-fonce.png" alt="Club Touriste"></a>
   <ul class="nav-links">
     <li><a href="/#histoire">Histoire</a></li>
     <li><a href="/menu/">Menu</a></li>
@@ -303,7 +316,7 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:3rem 2r
 
 <footer>
   <div class="footer-inner">
-    <a href="/" aria-label="Club Touriste — accueil"><img src="/logo-clubtouriste-cream.png" alt="Club Touriste" class="footer-logo-img" width="140" height="76" loading="lazy"></a>
+    <a href="/" aria-label="Club Touriste — accueil"><img src="/logo-clubtouriste-fonce.png" alt="Club Touriste" class="footer-logo-img" width="140" height="76" loading="lazy"></a>
     <div class="footer-copy">© 2026 Club Touriste Inc. · 133 Rue Victoria, Salaberry-de-Valleyfield · <a href="/politique-de-confidentialite">Confidentialité</a> · <a href="#" data-cc="show-preferencesModal">Gérer les témoins</a></div>
   </div>
 </footer>
