@@ -38,7 +38,7 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
 <link rel="icon" href="/favicon.ico">
-<meta name="theme-color" content="#0F0D0A">
+<meta name="theme-color" content="#F2E5DE">
 <title>Club Touriste | Restaurant Gastronomique à Salaberry-de-Valleyfield</title>
 <meta name="description" content="Restaurant gastronomique au bord du canal de Beauharnois. Filet mignon AAA, fruits de mer, mariages, partys de Noël, événements corporatifs dans une maison victorienne centenaire. Réservez au (450) 373-5290.">
 <meta name="keywords" content="restaurant Valleyfield, restaurant gastronomique Salaberry-de-Valleyfield, Club Touriste, restaurant canal Beauharnois, restaurant Montérégie, filet mignon Valleyfield, restaurant romantique Valleyfield, souper occasion spéciale Valleyfield, restaurant sans gluten Valleyfield, restaurant végétarien Montérégie, salle privée Valleyfield, événement corporatif Valleyfield, salle mariage Valleyfield, réception mariage Suroît, party de Noël Valleyfield, 5 à 7 corporatif Valleyfield, salle anniversaire Valleyfield, baby shower Valleyfield, départ retraite Valleyfield, micro-mariage Valleyfield">
@@ -83,10 +83,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{--gold:#C9A96E;--gold-light:#E8D5A3;--gold-dark:#9B7A40;--cream:#F5F0E8;--dark:#0F0D0A;--dark-mid:#1A1712;--dark-surface:#231F1A;--dark-card:#2A2520;--text-light:#F0EAE0;--text-muted:#D5CDBF;--border:rgba(201,169,110,0.25);--font-display:'Playfair Display',Georgia,serif;--font-body:'Cormorant Garamond',Georgia,serif;--font-ui:'Jost',sans-serif}
+:root{--gold:#946B4C;--gold-light:#B0875E;--gold-dark:#775840;--rose:#9F6950;--rose-deep:#855742;--sage:#717656;--sage-deep:#5B6043;--green:#575C3D;--cream:#28221F;--dark:#F2E5DE;--dark-mid:#E9DAD3;--dark-surface:#EBE1DB;--dark-card:#E4D6CE;--text-light:#28221F;--text-muted:#6E6053;--border:rgba(40,34,31,0.16);--font-display:'Playfair Display',Georgia,serif;--font-body:'Cormorant Garamond',Georgia,serif;--font-ui:'Jost',sans-serif}
 html{scroll-behavior:smooth}
 body{background:var(--dark);color:var(--text-light);font-family:var(--font-body);font-size:19px;line-height:1.7;overflow-x:hidden}
-nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:.8rem 3rem;background:rgba(15,13,10,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:.8rem 3rem;background:rgba(242,231,220,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
 .nav-logo{display:flex;align-items:center;text-decoration:none;height:54px}
 .nav-logo img{height:100%;width:auto;display:block;opacity:.92;transition:opacity .2s}
 .nav-logo:hover img{opacity:1}
@@ -98,12 +98,12 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .nav-social a{color:var(--text-muted);transition:color .2s;display:flex;align-items:center}
 .nav-social a:hover{color:var(--gold)}
 .nav-social svg{width:17px;height:17px;fill:currentColor}
-.nav-reserve{font-family:var(--font-ui);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--dark);background:var(--gold);padding:.55rem 1.4rem;text-decoration:none;transition:background .2s}
-.nav-reserve:hover{background:var(--gold-light)}
+.nav-reserve{font-family:var(--font-ui);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--dark);background:var(--green);padding:.55rem 1.4rem;text-decoration:none;transition:background .2s}
+.nav-reserve:hover{background:var(--rose-deep)}
 .nav-burger{display:none;background:none;border:none;cursor:pointer;padding:.5rem;margin-left:.6rem;color:var(--text-light);transition:color .2s}
 .nav-burger:hover{color:var(--gold)}
 .nav-burger svg{width:24px;height:24px;display:block}
-.mobile-menu{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(15,13,10,.98);backdrop-filter:blur(20px);z-index:200;display:flex;flex-direction:column;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .35s ease}
+.mobile-menu{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(242,231,220,.98);backdrop-filter:blur(20px);z-index:200;display:flex;flex-direction:column;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .35s ease}
 .mobile-menu.is-open{opacity:1;pointer-events:auto}
 .mobile-menu-close{position:absolute;top:1.3rem;right:1.3rem;background:none;border:none;cursor:pointer;padding:.5rem;color:var(--text-light);transition:color .2s}
 .mobile-menu-close:hover{color:var(--gold)}
@@ -120,16 +120,16 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .mobile-menu-list a{font-family:var(--font-display);font-size:1.7rem;font-style:italic;color:var(--cream);text-decoration:none;transition:color .2s;letter-spacing:.02em}
 .mobile-menu-list a:hover,.mobile-menu-list a:focus{color:var(--gold)}
 .mobile-menu-footer{margin-top:2.5rem;display:flex;flex-direction:column;align-items:center;gap:1.5rem}
-.mobile-menu-reserve{font-family:var(--font-ui);font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--dark);background:var(--gold);padding:1rem 2.5rem;text-decoration:none;transition:background .2s}
-.mobile-menu-reserve:hover{background:var(--gold-light)}
+.mobile-menu-reserve{font-family:var(--font-ui);font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--dark);background:var(--green);padding:1rem 2.5rem;text-decoration:none;transition:background .2s}
+.mobile-menu-reserve:hover{background:var(--rose-deep)}
 .mobile-menu-social{display:flex;gap:1.6rem;align-items:center}
 .mobile-menu-social a{color:var(--text-muted);transition:color .2s;display:flex;align-items:center}
 .mobile-menu-social a:hover{color:var(--gold)}
 .mobile-menu-social svg{width:22px;height:22px;fill:currentColor}
 body.menu-open{overflow:hidden}
 .hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:8rem 2rem 5rem;position:relative;overflow:hidden}
-.hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 60% 50% at 50% 100%,rgba(201,169,110,.08) 0%,transparent 70%),radial-gradient(ellipse 80% 60% at 50% -10%,rgba(201,169,110,.04) 0%,transparent 60%)}
-.hero-lines{position:absolute;inset:0;background-image:linear-gradient(rgba(201,169,110,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(201,169,110,.04) 1px,transparent 1px);background-size:80px 80px;mask-image:radial-gradient(ellipse 70% 70% at 50% 50%,black,transparent)}
+.hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 60% 50% at 50% 100%,rgba(87,92,61,.06) 0%,transparent 70%),radial-gradient(ellipse 80% 60% at 50% -10%,rgba(87,92,61,.03) 0%,transparent 60%)}
+.hero-lines{position:absolute;inset:0;background-image:linear-gradient(rgba(87,92,61,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(87,92,61,.04) 1px,transparent 1px);background-size:80px 80px;mask-image:radial-gradient(ellipse 70% 70% at 50% 50%,black,transparent)}
 .hero-ornament{width:1px;height:60px;background:linear-gradient(to bottom,transparent,var(--gold),transparent);margin:0 auto 2rem;position:relative;z-index:1}
 .hero-eyebrow{font-family:var(--font-ui);font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:1.5rem;position:relative;z-index:1;display:flex;align-items:center;gap:1rem;justify-content:center}
 .hero-eyebrow::before,.hero-eyebrow::after{content:'';width:40px;height:1px;background:var(--gold-dark)}
@@ -144,8 +144,8 @@ body.menu-open{overflow:hidden}
 .hero-links{display:flex;gap:2rem;justify-content:center;margin-top:1.5rem;position:relative;z-index:2}
 .hero-links a{font-family:var(--font-ui);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-dark);text-decoration:none;transition:color .2s}
 .hero-links a:hover{color:var(--gold)}
-.btn-primary{font-family:var(--font-ui);font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;color:var(--dark);background:var(--gold);padding:1rem 2.4rem;text-decoration:none;transition:background .2s,transform .2s;display:inline-block}
-.btn-primary:hover{background:var(--gold-light);transform:translateY(-1px)}
+.btn-primary{font-family:var(--font-ui);font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;color:var(--dark);background:var(--green);padding:1rem 2.4rem;text-decoration:none;transition:background .2s,transform .2s;display:inline-block}
+.btn-primary:hover{background:var(--rose-deep);transform:translateY(-1px)}
 .btn-ghost{font-family:var(--font-ui);font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);background:transparent;border:1px solid var(--border);padding:1rem 2.4rem;text-decoration:none;transition:border-color .2s,color .2s;display:inline-block}
 .btn-ghost:hover{border-color:var(--gold);color:var(--gold-light)}
 .hero-bottom{position:absolute;bottom:2.5rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:.5rem;pointer-events:none}
@@ -192,7 +192,7 @@ section{padding:7rem 2rem}
 .exp-card{background:var(--dark-card);padding:2.5rem 2rem;border:1px solid var(--border);position:relative;overflow:hidden}
 .exp-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(to right,transparent,var(--gold),transparent);opacity:0;transition:opacity .3s}
 .exp-card:hover::before{opacity:1}
-.exp-number{font-family:var(--font-display);font-size:3.5rem;color:rgba(201,169,110,.12);line-height:1;margin-bottom:1rem}
+.exp-number{font-family:var(--font-display);font-size:3.5rem;color:rgba(87,92,61,.08);line-height:1;margin-bottom:1rem}
 .exp-title{font-family:var(--font-display);font-size:1.25rem;color:var(--cream);margin-bottom:.8rem}
 .exp-text{font-family:var(--font-body);font-size:1rem;font-style:italic;color:var(--text-muted);line-height:1.75}
 .events-section{background:var(--dark-mid);position:relative;overflow:hidden}
@@ -204,7 +204,7 @@ section{padding:7rem 2rem}
 .events-content h3{font-family:var(--font-display);font-size:1.6rem;color:var(--cream);margin-bottom:1.2rem;line-height:1.3}
 .events-content h3 em{font-style:italic;color:var(--gold)}
 .events-features{list-style:none;margin-bottom:2rem}
-.events-features li{font-family:var(--font-body);font-size:1rem;font-style:italic;color:var(--text-muted);padding:.55rem 0;border-bottom:1px solid rgba(201,169,110,.08);display:flex;align-items:center;gap:.8rem}
+.events-features li{font-family:var(--font-body);font-size:1rem;font-style:italic;color:var(--text-muted);padding:.55rem 0;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:.8rem}
 .events-features li::before{content:'';width:6px;height:1px;background:var(--gold-dark);flex-shrink:0}
 .contact-section{background:var(--dark)}
 .contact-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:2px}
@@ -238,11 +238,12 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:3rem 2r
 @media(max-width:600px){section{padding:5rem 1.2rem}.hero{padding:7rem 1.2rem 4rem}.hero-ctas{flex-direction:column}.hero-bottom{display:none}.reservation-ctas{flex-direction:column}.promo-card{aspect-ratio:3/4}.hero-logo{width:88vw}.footer-logo-img{width:120px}}
 .fade-up{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
 .fade-up.visible{opacity:1;transform:translateY(0)}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
 </style>
 </head>
 <body>
 <nav>
-  <a href="#accueil" class="nav-logo" aria-label="Club Touriste — accueil"><img src="/logo-clubtouriste-cream.png" alt="Club Touriste"></a>
+  <a href="#accueil" class="nav-logo" aria-label="Club Touriste — accueil"><img src="/logo-clubtouriste-fonce.png" alt="Club Touriste"></a>
   <ul class="nav-links">
     <li><a href="#histoire">Histoire</a></li>
     <li><a href="/menu/">Menu</a></li>
@@ -292,12 +293,12 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:3rem 2r
   <div class="hero-ornament"></div>
   <div class="hero-eyebrow">Depuis 1930 · Salaberry-de-Valleyfield</div>
   <h1 class="sr-only">Club Touriste — Villa Cécilia, 1901 — Restaurant gastronomique à Salaberry-de-Valleyfield</h1>
-  <img src="/logo-clubtouriste-cream.png" alt="Club Touriste — Villa Cécilia 1901" class="hero-logo" width="640" height="345" fetchpriority="high">
+  <img src="/logo-clubtouriste-fonce.png" alt="Club Touriste — Villa Cécilia 1901" class="hero-logo" width="640" height="345" fetchpriority="high">
   <div class="hero-logo-tagline">Gastronomie · Patrimoine · Canal de Beauharnois</div>
   <p class="hero-sub">Une expérience culinaire dans un joyau du patrimoine québécois,<br>au bord du canal de Beauharnois.</p>
   <div class="hero-ctas">
     <a href="/menu/" class="btn-primary">Voir le menu</a>
-    <a href="/midi/" class="btn-primary" style="background:var(--gold-dark)">Menu du midi</a>
+    <a href="/midi/" class="btn-primary">Menu du midi</a>
     <a href="tel:+14503735290" class="btn-ghost">(450) 373-5290</a>
   </div>
   <div class="hero-bottom"><span>Découvrir</span><div class="scroll-line"></div></div>
@@ -428,7 +429,7 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:3rem 2r
           <p>133, Rue Victoria<br>Salaberry-de-Valleyfield, QC</p>
           <a href="tel:+14503735290">(450) 373-5290</a>
           <a href="https://www.facebook.com/clubtouriste" target="_blank">Facebook — Le Club Touriste</a>
-          <div style="margin-top:1.5rem"><a href="https://booking.libroreserve.com/260400d6ace7af7/QC017120721223/seat" target="_blank" style="font-family:var(--font-ui);font-size:.7rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:#0F0D0A!important;background:var(--gold);padding:.9rem 1.8rem;text-decoration:none;display:inline-block">Réserver une table</a></div>
+          <div style="margin-top:1.5rem"><a href="https://booking.libroreserve.com/260400d6ace7af7/QC017120721223/seat" target="_blank" style="font-family:var(--font-ui);font-size:.7rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--dark);background:var(--green);padding:.9rem 1.8rem;text-decoration:none;display:inline-block">Réserver une table</a></div>
         </div>
       </div>
     </div>
@@ -451,7 +452,7 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:3rem 2r
 
 <footer>
   <div class="footer-inner">
-    <a href="#accueil" aria-label="Club Touriste — retour en haut"><img src="/logo-clubtouriste-cream.png" alt="Club Touriste" class="footer-logo-img" width="140" height="76" loading="lazy"></a>
+    <a href="#accueil" aria-label="Club Touriste — retour en haut"><img src="/logo-clubtouriste-fonce.png" alt="Club Touriste" class="footer-logo-img" width="140" height="76" loading="lazy"></a>
     <div class="footer-copy">© 2026 Club Touriste Inc. · 133 Rue Victoria, Salaberry-de-Valleyfield · <a href="/politique-de-confidentialite" style="color:var(--text-muted);text-decoration:underline;text-underline-offset:3px">Confidentialité</a> · <a href="#" data-cc="show-preferencesModal" style="color:var(--text-muted);text-decoration:underline;text-underline-offset:3px">Gérer les témoins</a></div>
     <div class="footer-social">
       <a href="https://www.facebook.com/clubtouriste" target="_blank" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
