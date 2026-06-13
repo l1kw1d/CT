@@ -1,73 +1,94 @@
 <!DOCTYPE html>
 <html lang="fr-CA" prefix="og: https://ogp.me/ns#">
 <head>
+<!-- Google Consent Mode v2, défaut "denied" (Loi 25) -->
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('consent', 'default', {
-    'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied',
-    'analytics_storage':'denied','functionality_storage':'denied','personalization_storage':'denied',
-    'security_storage':'granted','wait_for_update':500
+    'ad_storage': 'denied',
+    'ad_user_data': 'denied',
+    'ad_personalization': 'denied',
+    'analytics_storage': 'denied',
+    'functionality_storage': 'denied',
+    'personalization_storage': 'denied',
+    'security_storage': 'granted',
+    'wait_for_update': 500
   });
 </script>
+
+<!-- Google Analytics 4 -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JTHGEYTWG"></script>
-<script>gtag('js', new Date()); gtag('config', 'G-8JTHGEYTWG', {'anonymize_ip': true});</script>
+<script>
+  gtag('js', new Date());
+  gtag('config', 'G-8JTHGEYTWG', { 'anonymize_ip': true });
+</script>
+
+<!-- CookieConsent -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css">
 <script type="module" src="/js/cookieconsent-config.js"></script>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="icon" href="/favicon.ico">
 <meta name="theme-color" content="#F2E5DE">
 
-<title>Party de Noël & Temps des Fêtes | Club Touriste, Valleyfield, Suroît</title>
-<meta name="description" content="Organisez votre party de Noël corporatif ou souper du temps des Fêtes au Club Touriste, Salaberry-de-Valleyfield. Villa Cécilia 1901, formule clé en main, cuisine gastronomique. (450) 373-5290.">
-<meta name="keywords" content="party de Noël Valleyfield, party Noël corporatif Suroît, party de Noël entreprise Montérégie, souper temps des fêtes Valleyfield, 5 à 7 Noël Suroît, party de bureau Valleyfield, souper Noël équipe Montérégie, réserver party de Noël Beauharnois, restaurant Noël corporatif Valleyfield, salle privée Noël Suroît, fête de fin d'année entreprise Montérégie, souper de Noël groupe Valleyfield, banquet temps des fêtes Suroît, cocktail dînatoire Noël Montérégie">
+<title>Groupes & Événements privés | Club Touriste, Villa Cécilia, Salaberry-de-Valleyfield</title>
+<meta name="description" content="Réservez la Villa Cécilia pour vos événements privés : mariages, anniversaires, partys corporatifs, réceptions funéraires, baby showers, 5 à 7, retrouvailles. Jusqu'à 120 personnes. Salaberry-de-Valleyfield. (450) 373-5290.">
+<meta name="keywords" content="salle privée Valleyfield, événement privé Salaberry-de-Valleyfield, location salle groupe Suroît, réception mariage Valleyfield, micro-mariage Montérégie, salle fiançailles Valleyfield, enterrement vie jeune fille Suroît, party corporatif Montérégie, réception funéraire Valleyfield, salle anniversaire Valleyfield, baby shower restaurant Valleyfield, 5 à 7 corporatif Suroît, party de Noël entreprise Valleyfield, gala souper-bénéfice Montérégie, AGA salle Valleyfield, conférence pharmaceutique Suroît, départ retraite restaurant Valleyfield, groupe restaurant Valleyfield, privatiser restaurant Montérégie">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://clubtouriste.ca/groupes/temps-des-fetes/">
+<link rel="canonical" href="https://clubtouriste.ca/groupes/">
 <meta name="geo.region" content="CA-QC">
 <meta name="geo.placename" content="Salaberry-de-Valleyfield, Québec">
 
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Club Touriste">
-<meta property="og:title" content="Party de Noël & Temps des Fêtes | Club Touriste, Villa Cécilia">
-<meta property="og:description" content="Organisez votre party de Noël corporatif au Club Touriste, Villa Cécilia 1901. Formule clé en main, cuisine gastronomique sur place.">
-<meta property="og:url" content="https://clubtouriste.ca/groupes/temps-des-fetes/">
-<meta property="og:image" content="https://clubtouriste.ca/og-temps-des-fetes.png">
+<meta property="og:title" content="Groupes & Événements privés | Villa Cécilia, Club Touriste">
+<meta property="og:description" content="Privatisez la Villa Cécilia (1901) pour votre événement. Mariages, anniversaires, partys corporatifs, baby showers, réceptions funéraires. Jusqu'à 120 personnes.">
+<meta property="og:url" content="https://clubtouriste.ca/groupes/">
+<meta property="og:image" content="https://clubtouriste.ca/og-groupes.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:locale" content="fr_CA">
 <meta name="twitter:card" content="summary_large_image">
 
+<!-- JSON-LD : EventVenue + Service -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "Party de Noël et Temps des Fêtes au Club Touriste",
-  "serviceType": "Christmas party venue, Holiday corporate event",
-  "description": "Réservation de partys de Noël corporatifs et soupers du temps des Fêtes à Salaberry-de-Valleyfield. Privatisation de la Villa Cécilia (1901), cuisine gastronomique sur place, formule clé en main.",
-  "provider": {
-    "@type": "Restaurant",
-    "name": "Club Touriste",
-    "telephone": "+14503735290",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "133 Rue Victoria",
-      "addressLocality": "Salaberry-de-Valleyfield",
-      "addressRegion": "QC",
-      "postalCode": "J6T 1A8",
-      "addressCountry": "CA"
-    }
+  "@type": "EventVenue",
+  "name": "Club Touriste, Villa Cécilia",
+  "description": "Restaurant gastronomique et salle d'événements privés dans une maison ancestrale victorienne de 1901, sur le bord du canal de Beauharnois. Privatisation des étages 2 et 3, capacité jusqu'à 120 personnes. Mariages, anniversaires, événements corporatifs, réceptions funéraires.",
+  "url": "https://clubtouriste.ca/groupes/",
+  "telephone": "+14503735290",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "133 Rue Victoria",
+    "addressLocality": "Salaberry-de-Valleyfield",
+    "addressRegion": "QC",
+    "postalCode": "J6T 1A8",
+    "addressCountry": "CA"
   },
+  "maximumAttendeeCapacity": 120,
+  "amenityFeature": [
+    {"@type": "LocationFeatureSpecification", "name": "Privatisation des étages 2 et 3"},
+    {"@type": "LocationFeatureSpecification", "name": "Terrasse sur le canal de Beauharnois"},
+    {"@type": "LocationFeatureSpecification", "name": "Cuisine gastronomique sur place"},
+    {"@type": "LocationFeatureSpecification", "name": "Bar complet"},
+    {"@type": "LocationFeatureSpecification", "name": "Service en salle dédié"},
+    {"@type": "LocationFeatureSpecification", "name": "Stationnement"},
+    {"@type": "LocationFeatureSpecification", "name": "Maison patrimoniale 1901"}
+  ],
   "areaServed": [
     {"@type": "City", "name": "Salaberry-de-Valleyfield"},
     {"@type": "City", "name": "Beauharnois"},
     {"@type": "City", "name": "Châteauguay"},
     {"@type": "City", "name": "Vaudreuil-Dorion"},
-    {"@type": "AdministrativeArea", "name": "Suroît"},
-    {"@type": "AdministrativeArea", "name": "Montérégie"}
+    {"@type": "AdministrativeArea", "name": "Montérégie"},
+    {"@type": "AdministrativeArea", "name": "Suroît"}
   ]
 }
 </script>
@@ -78,8 +99,7 @@
   "@type": "BreadcrumbList",
   "itemListElement": [
     {"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://clubtouriste.ca/"},
-    {"@type": "ListItem", "position": 2, "name": "Groupes & Événements", "item": "https://clubtouriste.ca/groupes/"},
-    {"@type": "ListItem", "position": 3, "name": "Temps des Fêtes", "item": "https://clubtouriste.ca/groupes/temps-des-fetes/"}
+    {"@type": "ListItem", "position": 2, "name": "Groupes & Événements", "item": "https://clubtouriste.ca/groupes/"}
   ]
 }
 </script>
@@ -91,50 +111,58 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Quand faut-il réserver son party de Noël?",
+      "name": "Quelle est la capacité pour un groupe au Club Touriste?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Les vendredis et samedis de décembre sont les premières dates à se remplir. Nous recommandons de réserver le plus tôt possible, idéalement dès l'été, pour avoir le choix de votre date."
+        "text": "Le minimum pour réserver en groupe est de 20 personnes. La capacité maximale est de 120 personnes en privatisation complète des étages 2 et 3. Le 3e étage seul accueille de 35 à 80 personnes. La terrasse peut accueillir des groupes l'été, et sa privatisation est possible à partir de 70 personnes."
       }
     },
     {
       "@type": "Question",
-      "name": "Quelles formules de repas offrez-vous pour les groupes du temps des Fêtes?",
+      "name": "Y a-t-il des frais de salle ou de réservation?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Six formules au choix : repas servi à table, buffet chaud, buffet froid, bar à pâtes, bar à poutine ou cocktail dînatoire. Pour les groupes de 30 personnes et plus, un menu restreint est appliqué."
+        "text": "Aucun frais de réservation ni de salle, sauf pour la privatisation du 3e étage seul (150 $). Pour toutes les autres configurations, aucun frais additionnel."
       }
     },
     {
       "@type": "Question",
-      "name": "Quelle est la capacité de la Villa Cécilia pour un party de Noël?",
+      "name": "Quels types d'événements peut-on organiser au Club Touriste?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Le minimum pour un groupe privé est de 20 personnes. La capacité maximale est de 120 personnes en privatisation complète des étages 2 et 3. Le 3e étage seul accueille de 35 à 80 personnes."
+        "text": "Mariages et micro-mariages, anniversaires de mariage (25e, 50e), fiançailles et enterrements de vie de jeune fille ou de garçon, anniversaires (40e, 50e, 60e, 75e, 80e), baby showers et révélations de sexe, retrouvailles familiales, départs à la retraite, partys d'entreprise et 5 à 7 corporatifs, lancements de produits, lunchs d'affaires, conférences privées (pharmaceutique), galas et soupers-bénéfices, assemblées générales annuelles (AGA), partys de Noël et Temps des Fêtes, réceptions funéraires et commémorations."
       }
     },
     {
       "@type": "Question",
-      "name": "Y a-t-il des frais de salle?",
+      "name": "Quelles formules de repas sont offertes pour les groupes?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Aucun frais de salle ni de réservation, sauf pour la privatisation du 3e étage seul (150 $)."
+        "text": "Repas servi à table, buffet chaud, buffet froid, bar à pâtes, bar à poutine ou cocktail dînatoire. Pour les groupes de 30 personnes et plus, un menu restreint est obligatoire. Options sans gluten, végétariennes et adaptées aux allergies disponibles."
       }
     },
     {
       "@type": "Question",
-      "name": "Peut-on apporter notre propre vin ou alcool?",
+      "name": "Êtes-vous ouverts les fins de semaine pour les groupes?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Non. Le Club Touriste dispose d'un bar complet sur place avec carte des vins, importations privées, cocktails signatures, bières en fût, scotchs et cognacs."
+        "text": "Le Club Touriste peut ouvrir le samedi midi ou le dimanche pour les groupes de 40 personnes et plus, sur réservation."
       }
     },
     {
       "@type": "Question",
-      "name": "Peut-on apporter un gâteau ou des desserts maison?",
+      "name": "Comment obtenir une soumission pour un événement?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Oui, tous les groupes peuvent apporter leur gâteau, bûche de Noël ou desserts maison sans frais supplémentaires."
+        "text": "Remplissez le formulaire de demande sur cette page, écrivez-nous à resto@clubtouriste.ca ou appelez le (450) 373-5290."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Le Club Touriste dessert-il quelle région?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Situé au 133 Rue Victoria à Salaberry-de-Valleyfield, le Club Touriste accueille des groupes provenant de tout le Suroît, de la Montérégie, et de la grande région de Montréal Ouest (45 km), incluant Beauharnois, Châteauguay, Vaudreuil-Dorion, Coteau-du-Lac et Saint-Zotique."
       }
     }
   ]
@@ -148,94 +176,175 @@
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{--gold:#946B4C;--gold-light:#B0875E;--gold-dark:#775840;--rose:#9F6950;--rose-deep:#855742;--sage:#717656;--sage-deep:#5B6043;--green:#575C3D;--cream:#28221F;--dark:#F2E5DE;--dark-mid:#E9DAD3;--dark-surface:#EBE1DB;--dark-card:#E4D6CE;--text-light:#28221F;--text-muted:#6E6053;--border:rgba(40,34,31,0.16);--font-display:'Playfair Display',Georgia,serif;--font-body:'Cormorant Garamond',Georgia,serif;--font-ui:'Jost',sans-serif}
 html{scroll-behavior:smooth}
-body{background:var(--dark);color:var(--text-light);font-family:var(--font-body);font-size:19px;line-height:1.75;overflow-x:hidden}
+body{background:var(--dark);color:var(--text-light);font-family:var(--font-body);font-size:19px;line-height:1.7;overflow-x:hidden}
 
+/* NAV (identique à /midi/) */
 nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:.8rem 3rem;background:rgba(242,231,220,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
 .nav-logo{display:flex;align-items:center;text-decoration:none;height:54px}
-.nav-logo img{height:100%;width:auto;display:block;opacity:.92}
+.nav-logo img{height:100%;width:auto;display:block;opacity:.92;transition:opacity .2s}
+.nav-logo:hover img{opacity:1}
 .nav-links{display:flex;gap:2.2rem;list-style:none}
-.nav-links a{font-family:var(--font-ui);font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--text-muted);text-decoration:none;transition:color .2s}
+.nav-links a{font-family:var(--font-ui);font-size:.74rem;font-weight:400;letter-spacing:.16em;text-transform:uppercase;color:var(--text-muted);text-decoration:none;transition:color .2s}
 .nav-links a:hover,.nav-links a.active{color:var(--gold)}
 .nav-right{display:flex;align-items:center}
+.nav-social{display:flex;align-items:center;gap:1rem;margin-right:1.5rem}
+.nav-social a{color:var(--text-muted);transition:color .2s;display:flex;align-items:center}
+.nav-social a:hover{color:var(--gold)}
+.nav-social svg{width:17px;height:17px;fill:currentColor}
 .nav-reserve{font-family:var(--font-ui);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--dark);background:var(--green);padding:.55rem 1.4rem;text-decoration:none;transition:background .2s}
 .nav-reserve:hover{background:var(--rose-deep)}
 
-.breadcrumb{padding:6.5rem 2rem 1rem;max-width:1100px;margin:0 auto;font-family:var(--font-ui);font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:var(--text-muted)}
-.breadcrumb a{color:var(--text-muted);text-decoration:none;transition:color .2s}
-.breadcrumb a:hover{color:var(--gold)}
-.breadcrumb .sep{margin:0 .8rem;color:var(--gold-dark)}
-.breadcrumb .current{color:var(--gold)}
-
-.hero{padding:3rem 2rem 5rem;text-align:center;max-width:900px;margin:0 auto}
-.hero-eyebrow{font-family:var(--font-ui);font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:1.5rem;display:flex;align-items:center;gap:1rem;justify-content:center}
+/* HERO */
+.hero{min-height:78vh;padding:9rem 2rem 5rem;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 50% 100%,rgba(87,92,61,.05) 0%,transparent 70%);pointer-events:none}
+.hero-eyebrow{font-family:var(--font-ui);font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:1.5rem;display:flex;align-items:center;gap:1rem;justify-content:center;position:relative}
 .hero-eyebrow::before,.hero-eyebrow::after{content:'';width:40px;height:1px;background:var(--gold-dark)}
-.hero h1{font-family:var(--font-display);font-size:clamp(2.4rem,5.5vw,4.3rem);font-weight:400;line-height:1.1;color:var(--cream);margin-bottom:1.8rem}
+.hero h1{font-family:var(--font-display);font-size:clamp(2.5rem,6.5vw,5rem);font-weight:400;line-height:1.05;color:var(--cream);max-width:1000px;margin-bottom:1.5rem;position:relative}
 .hero h1 em{font-style:italic;color:var(--gold)}
-.hero-lead{font-family:var(--font-body);font-size:clamp(1.15rem,1.7vw,1.35rem);font-style:italic;color:var(--text-muted);margin-bottom:2.5rem;line-height:1.7}
-.hero-cta{display:flex;gap:1rem;flex-wrap:wrap;justify-content:center}
-.btn-primary{font-family:var(--font-ui);font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;color:var(--dark);background:var(--green);padding:1.05rem 2.4rem;text-decoration:none;display:inline-block;transition:background .2s}
-.btn-primary:hover{background:var(--rose-deep)}
+.hero-sub{font-family:var(--font-body);font-size:clamp(1.1rem,1.8vw,1.4rem);font-style:italic;color:var(--text-muted);max-width:680px;margin-bottom:2.5rem;position:relative}
+.hero-cta{display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;position:relative}
+.btn-primary{font-family:var(--font-ui);font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;color:var(--dark);background:var(--green);padding:1.05rem 2.4rem;text-decoration:none;display:inline-block;transition:background .2s,transform .2s}
+.btn-primary:hover{background:var(--rose-deep);transform:translateY(-1px)}
 .btn-secondary{font-family:var(--font-ui);font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);border:1px solid var(--gold-dark);padding:1.05rem 2.4rem;text-decoration:none;display:inline-block;transition:all .2s}
 .btn-secondary:hover{border-color:var(--gold);background:rgba(87,92,61,.05)}
 .divider-center{width:60px;height:1px;background:var(--gold-dark);margin:3rem auto 0}
 
-.section{padding:4.5rem 2rem}
-.container{max-width:900px;margin:0 auto}
-.section-narrow{max-width:760px;margin:0 auto}
-.section-title{font-family:var(--font-display);font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:400;color:var(--cream);margin-bottom:1.3rem;line-height:1.2}
+/* SECTION GÉNÉRIQUE */
+.section{padding:5rem 2rem}
+.container{max-width:1180px;margin:0 auto}
+.section-eyebrow{font-family:var(--font-ui);font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;text-align:center}
+.section-title{font-family:var(--font-display);font-size:clamp(2rem,4vw,3rem);font-weight:400;color:var(--cream);text-align:center;margin-bottom:1rem;line-height:1.15}
 .section-title em{font-style:italic;color:var(--gold)}
-.prose p{font-family:var(--font-body);font-size:1.1rem;color:var(--text-light);line-height:1.8;margin-bottom:1.3rem}
-.prose p em{color:var(--text-muted);font-style:italic}
-.prose p strong{color:var(--cream);font-weight:400}
+.section-sub{font-family:var(--font-body);font-size:1.15rem;font-style:italic;color:var(--text-muted);text-align:center;max-width:680px;margin:0 auto 3.5rem}
 
-.inclus-section{background:var(--dark-mid);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
-.inclus-list{list-style:none;padding:0;margin-top:2rem}
-.inclus-list li{display:flex;align-items:flex-start;gap:1.2rem;padding:1.1rem 0;border-bottom:1px solid var(--border)}
-.inclus-list li:last-child{border-bottom:none}
-.inclus-list svg{flex-shrink:0;width:22px;height:22px;color:var(--gold);margin-top:.2rem}
-.inclus-list-text{flex:1}
-.inclus-list-title{font-family:var(--font-display);font-size:1.15rem;color:var(--cream);margin-bottom:.3rem}
-.inclus-list-desc{font-family:var(--font-body);font-size:1rem;color:var(--text-muted);line-height:1.55}
+/* SECTION : LE LIEU (chiffres clés) */
+.lieu-section{background:var(--dark-mid);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.lieu-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);border:1px solid var(--border);margin-top:1rem}
+.lieu-item{background:var(--dark-mid);padding:2.5rem 1.5rem;text-align:center}
+.lieu-num{font-family:var(--font-display);font-size:2.8rem;color:var(--gold);font-weight:400;line-height:1;margin-bottom:.5rem}
+.lieu-num em{font-style:italic;font-size:1.5rem;vertical-align:super;margin-left:.1em}
+.lieu-label{font-family:var(--font-ui);font-size:.72rem;letter-spacing:.15em;text-transform:uppercase;color:var(--text-muted);line-height:1.5}
 
-.delais-section{padding:3rem 2rem;text-align:center}
-.delais-section .container{max-width:760px}
-.delais-eyebrow{font-family:var(--font-ui);font-size:.72rem;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem}
-.delais-title{font-family:var(--font-display);font-size:1.6rem;font-style:italic;color:var(--cream);margin-bottom:1rem}
-.delais-text{font-family:var(--font-body);font-size:1.1rem;color:var(--text-muted);line-height:1.7}
-.delais-text em{color:var(--cream);font-style:italic}
+/* SECTION : TYPES D'ÉVÉNEMENTS (grille principale) */
+/* BANNIÈRE SAISONNIÈRE TEMPS DES FÊTES */
+.season-banner{display:flex;align-items:center;justify-content:space-between;gap:2rem;background:linear-gradient(135deg,var(--dark-surface) 0%,var(--dark-mid) 100%);border:1px solid var(--gold-dark);padding:1.8rem 2.2rem;margin-top:1rem;margin-bottom:2.5rem;text-decoration:none;color:inherit;position:relative;overflow:hidden;transition:border-color .3s}
+.season-banner::before{content:'';position:absolute;top:0;left:0;width:4px;height:100%;background:var(--gold)}
+.season-banner:hover{border-color:var(--gold)}
+.season-banner-text{flex:1}
+.season-banner-eyebrow{font-family:var(--font-ui);font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:.5rem}
+.season-banner-title{font-family:var(--font-display);font-size:1.6rem;font-style:italic;color:var(--cream);margin-bottom:.4rem;line-height:1.2}
+.season-banner-desc{font-family:var(--font-body);font-size:1rem;color:var(--text-muted);line-height:1.5}
+.season-banner-cta{font-family:var(--font-ui);font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);border:1px solid var(--gold-dark);padding:.85rem 1.6rem;transition:all .2s;white-space:nowrap;flex-shrink:0}
+.season-banner:hover .season-banner-cta{background:var(--gold);color:var(--dark);border-color:var(--gold)}
 
-.contact-section{background:var(--dark-mid);border-top:1px solid var(--border)}
-.contact-block{max-width:680px;margin:0 auto;text-align:center;background:var(--dark-surface);border:1px solid var(--border);padding:3rem 2.5rem;position:relative}
-.contact-block::before{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);width:80px;height:2px;background:var(--gold)}
-.contact-eyebrow{font-family:var(--font-ui);font-size:.72rem;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);margin-bottom:1.2rem}
-.contact-title{font-family:var(--font-display);font-size:1.7rem;color:var(--cream);margin-bottom:1.5rem;line-height:1.3}
-.contact-title em{font-style:italic;color:var(--gold)}
-.contact-tel{display:block;font-family:var(--font-display);font-size:2.2rem;color:var(--gold);text-decoration:none;letter-spacing:.05em;margin:1.5rem 0}
-.contact-tel:hover{color:var(--gold-light)}
-.contact-helper{font-family:var(--font-body);font-size:1rem;font-style:italic;color:var(--text-muted);margin-bottom:1.5rem}
-.contact-email{font-family:var(--font-ui);font-size:.78rem;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);text-decoration:none;border-bottom:1px solid var(--gold-dark);padding-bottom:2px}
+/* BANNIÈRE SAISONNIÈRE TEMPS DES FÊTES */
+.season-banner{display:flex;align-items:center;justify-content:space-between;gap:2rem;background:linear-gradient(135deg,var(--dark-surface) 0%,var(--dark-mid) 100%);border:1px solid var(--gold-dark);padding:1.8rem 2.2rem;margin-top:1rem;margin-bottom:2.5rem;text-decoration:none;color:inherit;position:relative;overflow:hidden;transition:border-color .3s}
+.season-banner::before{content:'';position:absolute;top:0;left:0;width:4px;height:100%;background:var(--gold)}
+.season-banner:hover{border-color:var(--gold)}
+.season-banner-text{flex:1}
+.season-banner-eyebrow{font-family:var(--font-ui);font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:.5rem}
+.season-banner-title{font-family:var(--font-display);font-size:1.7rem;font-style:italic;color:var(--cream);margin-bottom:.4rem;line-height:1.2}
+.season-banner-desc{font-family:var(--font-body);font-size:1rem;color:var(--text-muted);line-height:1.5}
+.season-banner-cta{font-family:var(--font-ui);font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);border:1px solid var(--gold-dark);padding:.85rem 1.6rem;transition:all .2s;white-space:nowrap;flex-shrink:0}
+.season-banner:hover .season-banner-cta{background:var(--gold);color:var(--dark);border-color:var(--gold)}
 
-.faq-list{margin-top:2rem;max-width:760px;margin-left:auto;margin-right:auto}
+.types-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:1rem}
+.type-card{background:var(--dark-surface);border:1px solid var(--border);padding:2.2rem 1.8rem;text-decoration:none;color:inherit;display:flex;flex-direction:column;position:relative;overflow:hidden;transition:border-color .3s,transform .3s}
+.type-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(to right,transparent,var(--gold),transparent);opacity:0;transition:opacity .3s}
+.type-card:hover{border-color:var(--gold-dark);transform:translateY(-3px)}
+.type-card:hover::before{opacity:1}
+.type-card-eyebrow{font-family:var(--font-ui);font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:.8rem}
+.type-card-title{font-family:var(--font-display);font-size:1.5rem;font-style:italic;color:var(--cream);margin-bottom:.8rem;line-height:1.2}
+.type-card-desc{font-family:var(--font-body);font-size:1rem;color:var(--text-muted);line-height:1.55;margin-bottom:1.2rem;flex:1}
+.type-card-list{list-style:none;padding:0;margin-bottom:1.5rem}
+.type-card-list li{font-family:var(--font-ui);font-size:.78rem;letter-spacing:.06em;color:var(--text-light);padding:.25rem 0;display:flex;align-items:center;gap:.6rem}
+.type-card-list li::before{content:'';width:4px;height:4px;background:var(--gold);border-radius:50%;flex-shrink:0}
+.type-card-link{font-family:var(--font-ui);font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);text-decoration:none;display:flex;align-items:center;gap:.5rem;margin-top:auto}
+.type-card-link svg{width:16px;height:1px;transition:width .3s}
+.type-card:hover .type-card-link svg{width:24px}
+
+/* SECTION : POURQUOI NOUS (différenciateurs) */
+.why-section{background:var(--dark-mid)}
+.why-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2.5rem;margin-top:1rem}
+.why-item{padding:1.5rem 0;border-top:1px solid var(--border)}
+.why-item-num{font-family:var(--font-display);font-size:.95rem;font-style:italic;color:var(--gold);margin-bottom:.6rem;letter-spacing:.1em}
+.why-item-title{font-family:var(--font-display);font-size:1.4rem;color:var(--cream);margin-bottom:.6rem}
+.why-item-desc{font-family:var(--font-body);font-size:1rem;color:var(--text-muted);line-height:1.6}
+
+/* SECTION : COMMENT ÇA MARCHE */
+.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;margin-top:1rem;position:relative}
+.process-grid::before{content:'';position:absolute;top:38px;left:10%;right:10%;height:1px;background:linear-gradient(to right,transparent,var(--gold-dark) 20%,var(--gold-dark) 80%,transparent);z-index:0}
+.process-item{text-align:center;position:relative;z-index:1}
+.process-num{width:76px;height:76px;border-radius:50%;background:var(--dark);border:1px solid var(--gold-dark);display:flex;align-items:center;justify-content:center;margin:0 auto 1.2rem;font-family:var(--font-display);font-size:1.6rem;color:var(--gold);font-style:italic}
+.process-title{font-family:var(--font-ui);font-size:.8rem;letter-spacing:.15em;text-transform:uppercase;color:var(--cream);margin-bottom:.6rem}
+.process-desc{font-family:var(--font-body);font-size:.95rem;font-style:italic;color:var(--text-muted);line-height:1.5;max-width:220px;margin:0 auto}
+
+/* FORMULAIRE */
+.form-section{background:var(--dark-mid);border-top:1px solid var(--border)}
+.form-wrapper{max-width:780px;margin:0 auto;background:var(--dark-surface);border:1px solid var(--border);padding:3rem 2.5rem;position:relative}
+.form-wrapper::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(to right,transparent,var(--gold),transparent)}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem 1.2rem}
+.form-field{display:flex;flex-direction:column}
+.form-field.full{grid-column:span 2}
+.form-field label{font-family:var(--font-ui);font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);margin-bottom:.5rem}
+.form-field input,.form-field select,.form-field textarea{font-family:var(--font-body);font-size:1rem;color:var(--text-light);background:var(--dark);border:1px solid var(--border);padding:.8rem 1rem;outline:none;transition:border-color .2s}
+.form-field input:focus,.form-field select:focus,.form-field textarea:focus{border-color:var(--gold)}
+.form-field textarea{resize:vertical;min-height:110px;font-family:var(--font-body)}
+.form-submit{grid-column:span 2;margin-top:.8rem}
+.form-submit button{width:100%;font-family:var(--font-ui);font-size:.75rem;letter-spacing:.22em;text-transform:uppercase;color:var(--dark);background:var(--green);padding:1.1rem;border:none;cursor:pointer;transition:background .2s}
+.form-submit button:hover{background:var(--rose-deep)}
+.form-helper{grid-column:span 2;text-align:center;margin-top:1rem;font-family:var(--font-body);font-size:.95rem;font-style:italic;color:var(--text-muted)}
+.form-helper a{color:var(--gold);text-decoration:none;border-bottom:1px solid var(--gold-dark);padding-bottom:1px}
+
+/* FAQ */
+.faq-list{margin-top:1rem;max-width:820px;margin-left:auto;margin-right:auto}
 .faq-item{border-bottom:1px solid var(--border);padding:1.5rem 0}
-.faq-q{font-family:var(--font-display);font-size:1.15rem;color:var(--cream);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem;list-style:none}
-.faq-q::-webkit-details-marker{display:none}
+.faq-q{font-family:var(--font-display);font-size:1.2rem;color:var(--cream);margin-bottom:.6rem;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem}
 .faq-q::after{content:'+';color:var(--gold);font-size:1.4rem;font-weight:300;transition:transform .3s}
 .faq-item[open] .faq-q::after{transform:rotate(45deg)}
-.faq-a{font-family:var(--font-body);font-size:1rem;color:var(--text-muted);line-height:1.7;padding-top:.6rem}
+.faq-a{font-family:var(--font-body);font-size:1rem;color:var(--text-muted);line-height:1.65;padding-top:.5rem}
 
+/* FOOTER (identique /midi/) */
 footer{background:var(--dark);border-top:1px solid var(--border);padding:3rem 2rem}
 .footer-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:2rem}
-.footer-logo-img{width:140px;height:auto;display:block;opacity:.85}
+.footer-logo-img{width:140px;height:auto;display:block;opacity:.85;transition:opacity .2s}
+.footer-logo-img:hover{opacity:1}
 .footer-copy{font-family:var(--font-ui);font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--text-muted)}
 .footer-copy a{color:var(--text-muted);text-decoration:underline;text-underline-offset:3px}
+.footer-social{display:flex;align-items:center;gap:1.2rem}
+.footer-social a{color:var(--text-muted);transition:color .2s;display:flex;align-items:center}
+.footer-social a:hover{color:var(--gold)}
+.footer-social svg{width:17px;height:17px;fill:currentColor}
 
-@media(max-width:800px){
-  nav{padding:.8rem 1.2rem}.nav-logo{height:42px}.nav-links{display:none}
-  .hero{padding:2rem 1.3rem 3rem}
-  .section{padding:3rem 1.3rem}
-  .footer-inner{flex-direction:column;text-align:center}
-  .breadcrumb{padding-left:1.3rem;padding-right:1.3rem}
+/* RESPONSIVE */
+@media(max-width:1000px){
+  .types-grid{grid-template-columns:repeat(2,1fr)}
+  .lieu-grid{grid-template-columns:repeat(2,1fr)}
+  .process-grid{grid-template-columns:repeat(2,1fr);gap:3rem}
+  .process-grid::before{display:none}
+  .why-grid{grid-template-columns:1fr}
 }
+@media(max-width:700px){
+  nav{padding:.8rem 1.2rem}
+  .nav-logo{height:42px}
+  .nav-links{display:none}
+  .nav-social{display:none}
+  .hero{padding:7rem 1.2rem 3rem}
+  .section{padding:3.5rem 1.2rem}
+  .types-grid{grid-template-columns:1fr}
+  .lieu-grid{grid-template-columns:1fr 1fr}
+  .season-banner{flex-direction:column;align-items:flex-start;gap:1.2rem;padding:1.5rem 1.5rem 1.5rem 1.8rem}
+  .form-grid{grid-template-columns:1fr}
+  .form-field.full{grid-column:span 1}
+  .form-submit{grid-column:span 1}
+  .form-helper{grid-column:span 1}
+  .form-wrapper{padding:2rem 1.3rem}
+  .footer-inner{flex-direction:column;text-align:center}
+}
+
+/* ANIMATIONS */
+.fade-up{opacity:0;transform:translateY(20px);transition:opacity .7s ease,transform .7s ease}
+.fade-up.visible{opacity:1;transform:translateY(0)}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
 </style>
 </head>
@@ -248,140 +357,424 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:3rem 2r
     <li><a href="/menu/">Menu</a></li>
     <li><a href="/midi/">Midi</a></li>
     <li><a href="/groupes/" class="active">Groupes</a></li>
+    <li><a href="/#evenements">Événements</a></li>
     <li><a href="/#contact">Contact</a></li>
   </ul>
   <div class="nav-right">
-    <a href="#contact" class="nav-reserve">Réserver</a>
+    <div class="nav-social">
+      <a href="https://www.facebook.com/clubtouriste" target="_blank" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+      <a href="https://www.instagram.com/clubtouriste" target="_blank" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+      <a href="https://www.tiktok.com/@clubtouriste" target="_blank" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 0010.86 4.48v-7.15a8.16 8.16 0 005.58 2.18v-3.44a4.85 4.85 0 01-1-.1z"/></svg></a>
+    </div>
+    <a href="#demande" class="nav-reserve">Soumission</a>
   </div>
 </nav>
 
-<div class="breadcrumb">
-  <a href="/">Accueil</a>
-  <span class="sep">/</span>
-  <a href="/groupes/">Groupes & Événements</a>
-  <span class="sep">/</span>
-  <span class="current">Temps des Fêtes</span>
-</div>
-
+<!-- HERO -->
 <header class="hero">
   <div class="hero-eyebrow">Villa Cécilia · 1901 · Salaberry-de-Valleyfield</div>
-  <h1>Votre <em>party de Noël</em><br>au Club Touriste</h1>
-  <p class="hero-lead">Soupers de bureau, partys d'entreprise, 5 à 7 de fin d'année. Une formule clé en main dans une maison ancestrale, pour que vous puissiez profiter de votre propre fête.</p>
+  <h1>Recevez vos invités<br>dans un <em>lieu d'exception</em></h1>
+  <p class="hero-sub">Privatisez la Villa Cécilia pour votre événement : mariage, anniversaire, party corporatif, baby shower, retrouvailles, réception funéraire. Jusqu'à 120 personnes. Cuisine gastronomique sur place. Nous nous occupons de tout.</p>
   <div class="hero-cta">
-    <a href="#contact" class="btn-primary">Réserver ma date</a>
+    <a href="#demande" class="btn-primary">Demander une soumission</a>
     <a href="tel:+14503735290" class="btn-secondary">(450) 373-5290</a>
   </div>
   <div class="divider-center"></div>
 </header>
 
-<section class="section">
-  <div class="container section-narrow prose">
-    <p>Le party de Noël, c'est le moment où votre équipe regarde l'année qui se termine, où vos employés se rappellent pourquoi ils aiment travailler avec vous, où vos partenaires repartent avec un souvenir précis du lieu où vous les avez reçus.</p>
-    <p>Au Club Touriste, on vous offre une <strong>formule clé en main</strong> dans la Villa Cécilia, maison patrimoniale de 1901 sur le bord du canal de Beauharnois. <em>Aucun traiteur à coordonner, aucune salle vide à habiller, aucun service à louer.</em> Vous arrivez avec votre équipe, on prend le relais.</p>
-  </div>
-</section>
-
-<section class="section inclus-section">
-  <div class="container section-narrow">
-    <h2 class="section-title">Ce que nous prenons <em>en charge</em></h2>
-    <p style="font-family:var(--font-body);font-size:1.1rem;font-style:italic;color:var(--text-muted);line-height:1.7">Vous arrivez avec votre équipe. Nous avons tout préparé.</p>
-
-    <ul class="inclus-list">
-      <li>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        <div class="inclus-list-text">
-          <div class="inclus-list-title">Privatisation de la Villa Cécilia</div>
-          <div class="inclus-list-desc">Étages 2 et 3 réservés à votre groupe, ou 3e étage seul selon la taille.</div>
-        </div>
-      </li>
-      <li>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        <div class="inclus-list-text">
-          <div class="inclus-list-title">Cuisine gastronomique sur place</div>
-          <div class="inclus-list-desc">Six formules au choix : repas servi à table, buffet chaud, buffet froid, bar à pâtes, bar à poutine ou cocktail dînatoire. Menu restreint à partir de 30 personnes.</div>
-        </div>
-      </li>
-      <li>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        <div class="inclus-list-text">
-          <div class="inclus-list-title">Service en salle dédié</div>
-          <div class="inclus-list-desc">Une équipe attentionnée pour l'accueil, le service à table et le débarrassage.</div>
-        </div>
-      </li>
-      <li>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        <div class="inclus-list-text">
-          <div class="inclus-list-title">Bar complet</div>
-          <div class="inclus-list-desc">Vins, cocktails signatures, importations privées, bières en fût, scotchs et cognacs.</div>
-        </div>
-      </li>
-      <li>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        <div class="inclus-list-text">
-          <div class="inclus-list-title">Coordination de votre soirée</div>
-          <div class="inclus-list-desc">Un seul point de contact pour orchestrer chaque détail, de la confirmation au jour J.</div>
-        </div>
-      </li>
-      <li>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        <div class="inclus-list-text">
-          <div class="inclus-list-title">Stationnement sur place</div>
-          <div class="inclus-list-desc">Pour votre équipe et vos invités, sur place et dans les rues avoisinantes.</div>
-        </div>
-      </li>
-    </ul>
-  </div>
-</section>
-
-<section class="delais-section">
+<!-- SECTION LIEU (chiffres clés) -->
+<section class="section lieu-section">
   <div class="container">
-    <div class="delais-eyebrow">À retenir</div>
-    <h2 class="delais-title">Les dates de <em>décembre</em> partent vite</h2>
-    <p class="delais-text">Les vendredis et samedis de décembre sont les premières dates à se remplir. <em>Réservez le plus tôt possible</em>, idéalement dès l'été, pour avoir le choix de votre date.</p>
-  </div>
-</section>
-
-<section class="section contact-section" id="contact">
-  <div class="container">
-    <div class="contact-block">
-      <div class="contact-eyebrow">Réservez votre date</div>
-      <h2 class="contact-title">Votre <em>party de Noël</em><br>au Club Touriste</h2>
-      <p class="contact-helper">Appelez ou écrivez. Date envisagée, nombre de personnes, formule souhaitée.</p>
-      <a href="tel:+14503735290" class="contact-tel">(450) 373-5290</a>
-      <p style="font-family:var(--font-body);font-size:.95rem;font-style:italic;color:var(--text-muted);margin-bottom:1.5rem">Ou écrivez-nous :</p>
-      <a href="mailto:resto@clubtouriste.ca?subject=Party%20de%20No%C3%ABl%20-%20Club%20Touriste&body=Bonjour%2C%0A%0AJ%27aimerais%20organiser%20un%20%C3%A9v%C3%A9nement%20du%20temps%20des%20F%C3%AAtes%20au%20Club%20Touriste.%0A%0ANom%20%3A%20%0AEntreprise%20%3A%20%0AT%C3%A9l%C3%A9phone%20%3A%20%0ANombre%20de%20personnes%20%3A%20%0ADate%20souhait%C3%A9e%20%3A%20%0AFormule%20envisag%C3%A9e%20%3A%20%0A%0AMerci%21" class="contact-email">resto@clubtouriste.ca</a>
+    <div class="section-eyebrow">Le lieu</div>
+    <h2 class="section-title">Un cadre <em>irréproductible</em></h2>
+    <p class="section-sub">Maison ancestrale victorienne au bord du canal de Beauharnois. Trois étages, une terrasse, une cuisine gastronomique. Aucun autre lieu de la région ne combine ces actifs.</p>
+    <div class="lieu-grid">
+      <div class="lieu-item">
+        <div class="lieu-num">120</div>
+        <div class="lieu-label">Personnes max<br>privatisation complète</div>
+      </div>
+      <div class="lieu-item">
+        <div class="lieu-num">2<em>+1</em></div>
+        <div class="lieu-label">Étages privatisables<br>+ terrasse l'été</div>
+      </div>
+      <div class="lieu-item">
+        <div class="lieu-num">1901</div>
+        <div class="lieu-label">Maison patrimoniale<br>style victorien</div>
+      </div>
+      <div class="lieu-item">
+        <div class="lieu-num">20</div>
+        <div class="lieu-label">Personnes minimum<br>pour groupe privé</div>
+      </div>
     </div>
   </div>
 </section>
 
+<!-- SECTION TYPES D'ÉVÉNEMENTS -->
 <section class="section">
   <div class="container">
-    <h2 class="section-title" style="text-align:center">Questions <em>fréquentes</em></h2>
+    <div class="section-eyebrow">Pour quel événement</div>
+    <h2 class="section-title">Chaque <em>occasion</em> a sa place</h2>
+    <p class="section-sub">Du party de bureau au mariage intime, du 50e anniversaire à la réception funéraire, la Villa Cécilia s'adapte à votre événement, votre groupe et votre budget.</p>
+
+    <!-- BANNIÈRE TEMPS DES FÊTES -->
+    <a href="/groupes/temps-des-fetes/" class="season-banner fade-up">
+      <div class="season-banner-text">
+        <div class="season-banner-eyebrow">Saisonnier · Réservez dès maintenant</div>
+        <div class="season-banner-title">Temps des Fêtes au Club Touriste</div>
+        <div class="season-banner-desc">Partys de bureau, soupers de Noël en famille, 5 à 7 des Fêtes, brunchs du jour de l'An. Les dates de décembre partent vite, planifiez à l'avance.</div>
+      </div>
+      <span class="season-banner-cta">Découvrir</span>
+    </a>
+
+    <div class="types-grid fade-up">
+
+      <!-- 1. MARIAGES & MICRO-MARIAGES -->
+      <a href="/groupes/mariages/" class="type-card">
+        <div class="type-card-eyebrow">Célébrations</div>
+        <div class="type-card-title">Mariages & micro-mariages</div>
+        <div class="type-card-desc">Votre cérémonie ailleurs, votre souper chez nous. Du mariage intime au grand rassemblement, la Villa devient votre lieu pour la soirée.</div>
+        <ul class="type-card-list">
+          <li>Mariages 20 à 120 invités</li>
+          <li>Micro-mariages intimes</li>
+          <li>Anniversaires de mariage (25e, 50e)</li>
+          <li>Renouvellement de vœux</li>
+        </ul>
+        <span class="type-card-link">En savoir plus <svg viewBox="0 0 24 1"><line x1="0" y1="0.5" x2="24" y2="0.5" stroke="currentColor"/></svg></span>
+      </a>
+
+      <!-- 2. FIANÇAILLES & ENTERREMENTS DE VIE -->
+      <a href="/groupes/fiancailles-enterrements-de-vie/" class="type-card">
+        <div class="type-card-eyebrow">Célébrations</div>
+        <div class="type-card-title">Fiançailles & enterrements de vie</div>
+        <div class="type-card-desc">Une demande en mariage qui marquera, une fête de fiançailles inoubliable, un enterrement de vie de fille ou de garçon dans un cadre raffiné.</div>
+        <ul class="type-card-list">
+          <li>Demandes en mariage privées</li>
+          <li>Fêtes de fiançailles</li>
+          <li>Enterrements de vie de jeune fille</li>
+          <li>Enterrements de vie de garçon</li>
+        </ul>
+        <span class="type-card-link">En savoir plus <svg viewBox="0 0 24 1"><line x1="0" y1="0.5" x2="24" y2="0.5" stroke="currentColor"/></svg></span>
+      </a>
+
+      <!-- 3. ANNIVERSAIRES IMPORTANTS -->
+      <a href="/groupes/anniversaires/" class="type-card">
+        <div class="type-card-eyebrow">Célébrations</div>
+        <div class="type-card-title">Anniversaires importants</div>
+        <div class="type-card-desc">Soulignez les grands chiffres comme ils méritent. Salon privé, menu adapté, gâteau permis sans frais, ambiance, tout est prêt pour vos invités.</div>
+        <ul class="type-card-list">
+          <li>40e, 50e, 60e, 75e, 80e</li>
+          <li>Fêtes surprises</li>
+          <li>Réunions d'amis</li>
+          <li>Célébrations privées</li>
+        </ul>
+        <span class="type-card-link">En savoir plus <svg viewBox="0 0 24 1"><line x1="0" y1="0.5" x2="24" y2="0.5" stroke="currentColor"/></svg></span>
+      </a>
+
+      <!-- 4. BABY SHOWERS & RÉVÉLATIONS -->
+      <a href="/groupes/baby-showers/" class="type-card">
+        <div class="type-card-eyebrow">Famille</div>
+        <div class="type-card-title">Baby showers & révélations</div>
+        <div class="type-card-desc">Les moments qui marquent une famille méritent un cadre à la hauteur. Brunch, lunch ou cocktail, menu adapté, espace privé.</div>
+        <ul class="type-card-list">
+          <li>Baby showers classiques</li>
+          <li>Révélations de sexe</li>
+          <li>Fêtes prénatales</li>
+          <li>Brunchs en famille</li>
+        </ul>
+        <span class="type-card-link">En savoir plus <svg viewBox="0 0 24 1"><line x1="0" y1="0.5" x2="24" y2="0.5" stroke="currentColor"/></svg></span>
+      </a>
+
+      <!-- 5. RETROUVAILLES FAMILIALES -->
+      <a href="/groupes/retrouvailles/" class="type-card">
+        <div class="type-card-eyebrow">Famille</div>
+        <div class="type-card-title">Retrouvailles familiales</div>
+        <div class="type-card-desc">Quand la famille se rassemble après des années ou simplement pour le plaisir. Un lieu chaleureux, une cuisine généreuse, du temps de qualité.</div>
+        <ul class="type-card-list">
+          <li>Retrouvailles familiales élargies</li>
+          <li>Rencontres entre générations</li>
+          <li>Réunions de cousins</li>
+          <li>Anciens collègues, anciens camarades</li>
+        </ul>
+        <span class="type-card-link">En savoir plus <svg viewBox="0 0 24 1"><line x1="0" y1="0.5" x2="24" y2="0.5" stroke="currentColor"/></svg></span>
+      </a>
+
+      <!-- 6. DÉPARTS À LA RETRAITE -->
+      <a href="/groupes/retraites/" class="type-card">
+        <div class="type-card-eyebrow">Famille</div>
+        <div class="type-card-title">Départs à la retraite</div>
+        <div class="type-card-desc">Soulignez une carrière entière, un départ qui mérite plus qu'un gâteau au bureau. Cadre élégant, repas servi ou cocktail, hommage en bonne et due forme.</div>
+        <ul class="type-card-list">
+          <li>Soupers de retraite</li>
+          <li>Cocktails de départ</li>
+          <li>Hommages de carrière</li>
+          <li>Célébrations entre collègues</li>
+        </ul>
+        <span class="type-card-link">En savoir plus <svg viewBox="0 0 24 1"><line x1="0" y1="0.5" x2="24" y2="0.5" stroke="currentColor"/></svg></span>
+      </a>
+
+      <!-- 7. CORPORATIF & 5 À 7 -->
+      <a href="/groupes/corporatif/" class="type-card">
+        <div class="type-card-eyebrow">Affaires</div>
+        <div class="type-card-title">Corporatif & 5 à 7</div>
+        <div class="type-card-desc">Un lieu qui en met plein la vue à vos employés, clients ou partenaires. Loin des salles d'hôtel anonymes, plus près de ce qui marque les esprits.</div>
+        <ul class="type-card-list">
+          <li>Partys d'entreprise</li>
+          <li>5 à 7 corporatifs</li>
+          <li>Lancements de produits</li>
+          <li>Team building, soupers d'équipe</li>
+          <li>Lunchs d'affaires</li>
+        </ul>
+        <span class="type-card-link">En savoir plus <svg viewBox="0 0 24 1"><line x1="0" y1="0.5" x2="24" y2="0.5" stroke="currentColor"/></svg></span>
+      </a>
+
+      <!-- 8. CONFÉRENCES, GALAS & AGA -->
+      <a href="/groupes/conferences-galas/" class="type-card">
+        <div class="type-card-eyebrow">Affaires</div>
+        <div class="type-card-title">Conférences, galas & AGA</div>
+        <div class="type-card-desc">Conférences pharmaceutiques, formations professionnelles, galas-bénéfices, assemblées générales. Salon privé, confidentialité, repas inclus.</div>
+        <ul class="type-card-list">
+          <li>Conférences pharmaceutiques</li>
+          <li>Formations professionnelles</li>
+          <li>Galas et soupers-bénéfices</li>
+          <li>Assemblées générales annuelles (AGA)</li>
+          <li>Présentations de produits</li>
+        </ul>
+        <span class="type-card-link">En savoir plus <svg viewBox="0 0 24 1"><line x1="0" y1="0.5" x2="24" y2="0.5" stroke="currentColor"/></svg></span>
+      </a>
+
+      <!-- 9. RÉCEPTIONS FUNÉRAIRES -->
+      <a href="/groupes/reception-funeraire/" class="type-card">
+        <div class="type-card-eyebrow">Hommage</div>
+        <div class="type-card-title">Réceptions funéraires</div>
+        <div class="type-card-desc">Recevez vos proches dans un cadre paisible après la cérémonie. Formule buffet, nous nous occupons de tout, vous n'avez à vous soucier de rien.</div>
+        <ul class="type-card-list">
+          <li>Réception après obsèques</li>
+          <li>Verre du souvenir</li>
+          <li>Commémorations</li>
+          <li>Délais courts acceptés</li>
+        </ul>
+        <span class="type-card-link">En savoir plus <svg viewBox="0 0 24 1"><line x1="0" y1="0.5" x2="24" y2="0.5" stroke="currentColor"/></svg></span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- POURQUOI NOUS -->
+<section class="section why-section">
+  <div class="container">
+    <div class="section-eyebrow">Ce qui nous distingue</div>
+    <h2 class="section-title">Pourquoi le <em>Club Touriste</em></h2>
+    <p class="section-sub">Un lieu patrimonial, une cuisine gastronomique, une équipe dédiée, sous un même toit.</p>
+
+    <div class="why-grid">
+      <div class="why-item">
+        <div class="why-item-num">01.</div>
+        <div class="why-item-title">Une vraie cuisine, pas un traiteur</div>
+        <div class="why-item-desc">La même cuisine gastronomique qu'à la carte. Menus de groupe adaptés (3 services, 4 services, cocktail dînatoire), avec options sans gluten, végétariennes et adaptées aux allergies.</div>
+      </div>
+      <div class="why-item">
+        <div class="why-item-num">02.</div>
+        <div class="why-item-title">Un cachet irreproductible</div>
+        <div class="why-item-desc">Maison victorienne 1901, 3 étages, terrasse sur le canal de Beauharnois. Aucune salle de réception ni hôtel de la région n'offre ce cadre.</div>
+      </div>
+      <div class="why-item">
+        <div class="why-item-num">03.</div>
+        <div class="why-item-title">Aucune logistique à votre charge</div>
+        <div class="why-item-desc">Vous arrivez, vos invités sont accueillis, vous repartez. Pas de montage, pas de ménage, pas de coordination avec 5 fournisseurs. Tout est sous un même toit.</div>
+      </div>
+      <div class="why-item">
+        <div class="why-item-num">04.</div>
+        <div class="why-item-title">Bar complet & accord vins</div>
+        <div class="why-item-desc">Cocktails signatures, vins au verre et en bouteille, bières en fût, importations privées. Aucun permis temporaire à demander. Aucun BYOB.</div>
+      </div>
+      <div class="why-item">
+        <div class="why-item-num">05.</div>
+        <div class="why-item-title">Configurations flexibles</div>
+        <div class="why-item-desc">De 20 à 120 personnes. Privatisation du 3e étage seul (35 à 80 personnes), ou des étages 2 et 3 ensemble. Terrasse extérieure pour groupes l'été, privatisable à partir de 70 personnes. Ouvertures spéciales le samedi midi ou le dimanche possibles pour groupes de 40 et plus.</div>
+      </div>
+      <div class="why-item">
+        <div class="why-item-num">06.</div>
+        <div class="why-item-title">Réponse rapide & devis clair</div>
+        <div class="why-item-desc">Toutes les demandes répondues sous 24 h ouvrables. Disponibilités, options de menu et fourchette de prix transmises dès le premier échange.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMMENT ÇA MARCHE -->
+<section class="section">
+  <div class="container">
+    <div class="section-eyebrow">Comment ça marche</div>
+    <h2 class="section-title">Quatre étapes, <em>aucun stress</em></h2>
+    <p class="section-sub">De votre première demande au jour J. Un processus simple, des réponses rapides.</p>
+
+    <div class="process-grid">
+      <div class="process-item">
+        <div class="process-num">1</div>
+        <div class="process-title">Demande</div>
+        <div class="process-desc">Formulaire ou téléphone. Dites-nous votre événement, votre date, votre groupe.</div>
+      </div>
+      <div class="process-item">
+        <div class="process-num">2</div>
+        <div class="process-title">Réponse 24 h</div>
+        <div class="process-desc">Disponibilités, options de menu, fourchette de prix par personne.</div>
+      </div>
+      <div class="process-item">
+        <div class="process-num">3</div>
+        <div class="process-title">Visite & devis</div>
+        <div class="process-desc">Vous venez voir la maison, on ajuste le menu, on confirme tout par écrit.</div>
+      </div>
+      <div class="process-item">
+        <div class="process-num">4</div>
+        <div class="process-title">Le jour J</div>
+        <div class="process-desc">Vous arrivez avec vos invités. On s'occupe de tout le reste.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FORMULAIRE -->
+<section class="section form-section" id="demande">
+  <div class="container">
+    <div class="section-eyebrow">Demande de soumission</div>
+    <h2 class="section-title">Parlez-nous de <em>votre événement</em></h2>
+    <p class="section-sub">Réponse sous 24 heures ouvrables. Aucun engagement.</p>
+
+    <div class="form-wrapper">
+      <form id="form-groupes" class="form-grid" onsubmit="return envoyerDemandeGroupe(event)">
+        <div class="form-field">
+          <label for="nom">Nom complet *</label>
+          <input type="text" id="nom" name="nom" required>
+        </div>
+        <div class="form-field">
+          <label for="telephone">Téléphone *</label>
+          <input type="tel" id="telephone" name="telephone" required>
+        </div>
+        <div class="form-field full">
+          <label for="courriel">Courriel *</label>
+          <input type="email" id="courriel" name="courriel" required>
+        </div>
+
+        <div class="form-field">
+          <label for="type">Type d'événement *</label>
+          <select id="type" name="type" required>
+            <option value="">Choisir...</option>
+            <option>Mariage / Micro-mariage</option>
+            <option>Anniversaire de mariage (25e, 50e)</option>
+            <option>Fiançailles / Demande en mariage</option>
+            <option>Enterrement de vie de jeune fille</option>
+            <option>Enterrement de vie de garçon</option>
+            <option>Anniversaire (40e, 50e, 60e, 75e, 80e)</option>
+            <option>Baby shower / Révélation de sexe</option>
+            <option>Retrouvailles familiales</option>
+            <option>Départ à la retraite</option>
+            <option>Party d'entreprise</option>
+            <option>5 à 7 corporatif</option>
+            <option>Lancement de produit / Cocktail dînatoire</option>
+            <option>Lunch / Réunion d'affaires</option>
+            <option>Conférence privée (pharmaceutique, etc.)</option>
+            <option>Gala / Souper-bénéfice</option>
+            <option>Assemblée générale annuelle (AGA)</option>
+            <option>Party de Noël / Temps des Fêtes</option>
+            <option>Réception funéraire</option>
+            <option>Autre</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="nb">Nombre de personnes *</label>
+          <select id="nb" name="nb" required>
+            <option value="">Choisir...</option>
+            <option>20 à 30</option>
+            <option>30 à 50</option>
+            <option>50 à 70</option>
+            <option>70 à 90</option>
+            <option>90 à 120</option>
+            <option>Plus de 120</option>
+          </select>
+        </div>
+
+        <div class="form-field">
+          <label for="date">Date souhaitée *</label>
+          <input type="date" id="date" name="date" required>
+        </div>
+        <div class="form-field">
+          <label for="formule">Formule souhaitée (si connue)</label>
+          <select id="formule" name="formule">
+            <option value="">À discuter</option>
+            <option>Repas servi à table (3 ou 4 services)</option>
+            <option>Buffet chaud</option>
+            <option>Buffet froid</option>
+            <option>Bar à pâtes</option>
+            <option>Bar à poutine</option>
+            <option>Cocktail dînatoire</option>
+            <option>Pas encore décidé</option>
+          </select>
+        </div>
+
+        <div class="form-field full">
+          <label for="message">Dites-nous tout (optionnel)</label>
+          <textarea id="message" name="message" placeholder="Détails de l'événement, type de menu souhaité, restrictions alimentaires, attentes particulières..."></textarea>
+        </div>
+
+        <div class="form-submit">
+          <button type="submit">Envoyer ma demande</button>
+        </div>
+        <div class="form-helper">
+          Vous préférez écrire directement? <a href="mailto:resto@clubtouriste.ca">resto@clubtouriste.ca</a><br>
+          Pour une demande urgente : <a href="tel:+14503735290">(450) 373-5290</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section">
+  <div class="container">
+    <div class="section-eyebrow">Questions fréquentes</div>
+    <h2 class="section-title">Tout ce qu'il faut <em>savoir</em></h2>
 
     <div class="faq-list">
       <details class="faq-item">
-        <summary class="faq-q">Quand faut-il réserver son party de Noël?</summary>
-        <div class="faq-a">Les vendredis et samedis de décembre sont les premières dates à se remplir. Nous recommandons de réserver le plus tôt possible, idéalement dès l'été, pour avoir le choix de votre date.</div>
+        <summary class="faq-q">Quelle est la capacité pour un groupe?</summary>
+        <div class="faq-a">Le minimum pour réserver en groupe est de 20 personnes. La capacité maximale est de 120 personnes en privatisation complète des étages 2 et 3. Le 3e étage seul accueille de 35 à 80 personnes. La terrasse peut accueillir des groupes l'été, et sa privatisation est possible à partir de 70 personnes.</div>
       </details>
       <details class="faq-item">
-        <summary class="faq-q">Quelles formules de repas offrez-vous pour les groupes du temps des Fêtes?</summary>
-        <div class="faq-a">Six formules au choix : repas servi à table, buffet chaud, buffet froid, bar à pâtes, bar à poutine ou cocktail dînatoire. Pour les groupes de 30 personnes et plus, un menu restreint est appliqué.</div>
+        <summary class="faq-q">Y a-t-il des frais de salle ou de réservation?</summary>
+        <div class="faq-a">Aucun frais de réservation ni de salle, sauf pour la privatisation du 3e étage seul (150 $). Pour toutes les autres configurations, aucun frais additionnel.</div>
       </details>
       <details class="faq-item">
-        <summary class="faq-q">Quelle est la capacité de la Villa Cécilia pour un party de Noël?</summary>
-        <div class="faq-a">Le minimum pour un groupe privé est de 20 personnes. La capacité maximale est de 120 personnes en privatisation complète des étages 2 et 3. Le 3e étage seul accueille de 35 à 80 personnes.</div>
+        <summary class="faq-q">Quelles formules de repas sont offertes?</summary>
+        <div class="faq-a">Repas servi à table, buffet chaud, buffet froid, bar à pâtes, bar à poutine, ou cocktail dînatoire. Pour les groupes de 30 personnes et plus, un menu restreint est obligatoire (sélection adaptée pour faciliter le service). Options sans gluten, végétariennes et pour allergies disponibles.</div>
       </details>
       <details class="faq-item">
-        <summary class="faq-q">Y a-t-il des frais de salle?</summary>
-        <div class="faq-a">Aucun frais de salle ni de réservation, sauf pour la privatisation du 3e étage seul (150 $).</div>
+        <summary class="faq-q">Peut-on apporter notre propre vin?</summary>
+        <div class="faq-a">Non. Nous avons un bar complet sur place avec carte des vins, bières en fût, cocktails signatures, importations privées et options sans alcool. Aucun BYOB.</div>
       </details>
       <details class="faq-item">
-        <summary class="faq-q">Peut-on apporter notre propre vin ou alcool?</summary>
-        <div class="faq-a">Non. Le Club Touriste dispose d'un bar complet sur place avec carte des vins, importations privées, cocktails signatures, bières en fût, scotchs et cognacs.</div>
+        <summary class="faq-q">Peut-on apporter notre propre gâteau?</summary>
+        <div class="faq-a">Oui. Tous les groupes peuvent apporter leur gâteau d'anniversaire, de mariage ou autre, sans frais supplémentaires.</div>
       </details>
       <details class="faq-item">
-        <summary class="faq-q">Peut-on apporter un gâteau ou des desserts maison?</summary>
-        <div class="faq-a">Oui, tous les groupes peuvent apporter leur gâteau, bûche de Noël ou desserts maison sans frais supplémentaires.</div>
+        <summary class="faq-q">Êtes-vous ouverts les fins de semaine pour les groupes?</summary>
+        <div class="faq-a">Nous pouvons ouvrir le samedi midi ou le dimanche pour les groupes de 40 personnes et plus. Nos horaires habituels sont ceux du restaurant.</div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">Combien à l'avance faut-il réserver?</summary>
+        <div class="faq-a">Pour les mariages et partys de Noël (décembre) : 4 à 8 mois à l'avance. Pour les autres événements : 1 à 3 mois idéalement. Pour les réceptions funéraires, nous acceptons les délais courts.</div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">Y a-t-il du stationnement?</summary>
+        <div class="faq-a">Oui. Stationnement disponible sur place et dans les rues avoisinantes.</div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">Le Club Touriste est-il accessible aux personnes à mobilité réduite?</summary>
+        <div class="faq-a">La Villa Cécilia est une maison patrimoniale construite en 1901. Le bâtiment n'est pas adapté aux personnes à mobilité réduite. Si vous avez des invités concernés, contactez-nous pour discuter des options.</div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">Comment obtenir une soumission?</summary>
+        <div class="faq-a">Remplissez le formulaire sur cette page, écrivez-nous à resto@clubtouriste.ca, ou appelez au (450) 373-5290. Nous répondons dans les meilleurs délais avec disponibilités, options de menu et estimation de coût.</div>
       </details>
     </div>
   </div>
@@ -391,8 +784,58 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:3rem 2r
   <div class="footer-inner">
     <a href="/" aria-label="Club Touriste, accueil"><img src="/logo-clubtouriste-fonce.png" alt="Club Touriste" class="footer-logo-img" width="140" height="76" loading="lazy"></a>
     <div class="footer-copy">© 2026 Club Touriste Inc. · 133 Rue Victoria, Salaberry-de-Valleyfield · <a href="/politique-de-confidentialite">Confidentialité</a> · <a href="#" data-cc="show-preferencesModal">Gérer les témoins</a></div>
+    <div class="footer-social">
+      <a href="https://www.facebook.com/clubtouriste" target="_blank" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+      <a href="https://www.instagram.com/clubtouriste" target="_blank" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+      <a href="https://www.tiktok.com/@clubtouriste" target="_blank" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 0010.86 4.48v-7.15a8.16 8.16 0 005.58 2.18v-3.44a4.85 4.85 0 01-1-.1z"/></svg></a>
+    </div>
   </div>
 </footer>
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) entry.target.classList.add('visible');
+  });
+}, { threshold: 0.1 });
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+// Construit un mailto pré-rempli avec les champs du formulaire et ouvre le client courriel du visiteur
+function envoyerDemandeGroupe(e) {
+  e.preventDefault();
+
+  const f = document.getElementById('form-groupes');
+  const nom = f.nom.value.trim();
+  const tel = f.telephone.value.trim();
+  const courriel = f.courriel.value.trim();
+  const type = f.type.value;
+  const nb = f.nb.value;
+  const date = f.date.value;
+  const formule = f.formule.value || 'À discuter';
+  const message = f.message.value.trim() || '(aucun détail supplémentaire)';
+
+  const sujet = `Demande de groupe - ${type} - ${nom}`;
+
+  const corps =
+    `Bonjour,\n\n` +
+    `J'aimerais obtenir une soumission pour un événement de groupe au Club Touriste.\n\n` +
+    `COORDONNÉES\n` +
+    `Nom : ${nom}\n` +
+    `Téléphone : ${tel}\n` +
+    `Courriel : ${courriel}\n\n` +
+    `DÉTAILS DE L'ÉVÉNEMENT\n` +
+    `Type d'événement : ${type}\n` +
+    `Nombre de personnes : ${nb}\n` +
+    `Date souhaitée : ${date}\n` +
+    `Formule souhaitée : ${formule}\n\n` +
+    `MESSAGE\n${message}\n\n` +
+    `Merci,\n${nom}`;
+
+  const mailto = `mailto:resto@clubtouriste.ca?subject=${encodeURIComponent(sujet)}&body=${encodeURIComponent(corps)}`;
+  window.location.href = mailto;
+  return false;
+}
+</script>
 
 </body>
 </html>
