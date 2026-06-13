@@ -40,11 +40,11 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/menu/manifest.webmanifest">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="apple-mobile-web-app-title" content="Menu CT">
 <link rel="apple-touch-icon" sizes="180x180" href="/icons/menu-180.png">
 <link rel="icon" href="/favicon.ico">
-<meta name="theme-color" content="#0F0D0A">
+<meta name="theme-color" content="#F2E5DE">
 
 <!-- SEO -->
 <title>Menu | Club Touriste — Restaurant Gastronomique Salaberry-de-Valleyfield</title>
@@ -147,18 +147,13 @@
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
-    --gold: #C9A96E;
-    --gold-light: #E8D5A3;
-    --gold-dark: #9B7A40;
-    --cream: #F5F0E8;
-    --cream-dark: #EDE4D3;
-    --dark: #0F0D0A;
-    --dark-mid: #1A1712;
-    --dark-surface: #231F1A;
-    --dark-card: #2A2520;
-    --text-light: #F0EAE0;
-    --text-muted: #D5CDBF;
-    --border: rgba(201, 169, 110, 0.25);
+    --gold: #946B4C; --gold-light: #B0875E; --gold-dark: #775840;
+    --rose: #9F6950; --rose-deep: #855742;
+    --sage: #717656; --sage-deep: #5B6043; --green: #575C3D;
+    --cream: #28221F;
+    --dark: #F2E5DE; --dark-mid: #E9DAD3; --dark-surface: #EBE1DB; --dark-card: #E4D6CE;
+    --text-light: #28221F; --text-muted: #6E6053;
+    --border: rgba(40,34,31,0.16);
     --font-display: 'Playfair Display', Georgia, serif;
     --font-body: 'Cormorant Garamond', Georgia, serif;
     --font-ui: 'Jost', sans-serif;
@@ -184,7 +179,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 0.8rem 3rem;
-    background: rgba(15, 13, 10, 0.95);
+    background: rgba(242,231,220,.92);
     backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--border);
   }
@@ -215,8 +210,8 @@
   .nav-social a:hover { color: var(--gold); }
   .nav-social svg { width: 17px; height: 17px; fill: currentColor; }
 
-  .nav-reserve { font-family: var(--font-ui); font-size: 0.72rem; font-weight: 400; letter-spacing: 0.16em; text-transform: uppercase; color: var(--dark); background: var(--gold); padding: 0.55rem 1.4rem; text-decoration: none; transition: background 0.2s; }
-  .nav-reserve:hover { background: var(--gold-light); }
+  .nav-reserve { font-family: var(--font-ui); font-size: 0.72rem; font-weight: 400; letter-spacing: 0.16em; text-transform: uppercase; color: var(--dark); background: var(--green); padding: 0.55rem 1.4rem; text-decoration: none; transition: background 0.2s; }
+  .nav-reserve:hover { background: var(--rose-deep); }
 
   /* PAGE HEADER */
   .page-header {
@@ -231,8 +226,8 @@
     position: absolute;
     inset: 0;
     background:
-      radial-gradient(ellipse 60% 50% at 50% 100%, rgba(201,169,110,0.06) 0%, transparent 70%),
-      radial-gradient(ellipse 80% 60% at 50% -10%, rgba(201,169,110,0.03) 0%, transparent 60%);
+      radial-gradient(ellipse 60% 50% at 50% 100%, rgba(87,92,61,0.05) 0%, transparent 70%),
+      radial-gradient(ellipse 80% 60% at 50% -10%, rgba(87,92,61,0.03) 0%, transparent 60%);
   }
 
   .page-eyebrow {
@@ -354,7 +349,7 @@
     font-family: var(--font-display);
     font-size: 4rem;
     font-weight: 400;
-    color: rgba(201,169,110,0.1);
+    color: rgba(87,92,61,0.08);
     line-height: 1;
     margin-bottom: 0.5rem;
   }
@@ -381,7 +376,7 @@
     gap: 2rem;
     align-items: baseline;
     padding: 1.3rem 0;
-    border-bottom: 1px solid rgba(201,169,110,0.1);
+    border-bottom: 1px solid var(--border);
   }
 
   .menu-item:last-child { border-bottom: none; }
@@ -459,7 +454,7 @@
   /* WINE ITEMS */
   .wine-item {
     padding: 1.3rem 0;
-    border-bottom: 1px solid rgba(201,169,110,0.1);
+    border-bottom: 1px solid var(--border);
     display: grid;
     grid-template-columns: 1fr auto;
     gap: 2rem;
@@ -523,14 +518,14 @@
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: var(--dark);
-    background: var(--gold);
+    background: var(--green);
     padding: 1rem 2.4rem;
     text-decoration: none;
     display: inline-block;
     transition: background 0.2s;
   }
 
-  .cta-bar .btn-primary:hover { background: var(--gold-light); }
+  .cta-bar .btn-primary:hover { background: var(--rose-deep); }
 
   .cta-links { margin-top: 1.5rem; display: flex; gap: 2rem; justify-content: center; }
   .cta-links a { font-family: var(--font-ui); font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; color: var(--gold-dark); text-decoration: none; transition: color .2s; }
@@ -578,6 +573,8 @@
   /* ANIMATIONS */
   .fade-up { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
   .fade-up.visible { opacity: 1; transform: translateY(0); }
+
+  @media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition: none !important; animation: none !important; scroll-behavior: auto !important; } }
 </style>
 </head>
 <body>
@@ -587,12 +584,12 @@
   <symbol id="icon-chef" viewBox="0 0 24 24"><path d="M12 2l2.9 5.9L21 9.2l-4.5 4.4 1.1 6.3L12 17l-5.6 2.9 1.1-6.3L3 9.2l6.1-1.3z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></symbol>
   <symbol id="icon-veg" viewBox="0 0 24 24"><path d="M8 19c0-4 2-7 4-9M16 19c0-4-2-7-4-9" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><path d="M12 10c-3-.5-5-2-5-5 2.5 0 4.5 1.5 5 5z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/><path d="M12 10c3-.5 5-2 5-5-2.5 0-4.5 1.5-5 5z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></symbol>
   <symbol id="icon-gf" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M12 5c-1 2-1 4 0 6s1 4 0 6" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><line x1="5" y1="19" x2="19" y2="5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
-  <symbol id="icon-0pct" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5" fill="currentColor"/><text x="12" y="15.5" text-anchor="middle" font-size="9" font-weight="600" fill="var(--dark)" font-family="Jost, sans-serif">0%</text></symbol>
+  <symbol id="icon-0pct" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.3"/><text x="12" y="15.5" text-anchor="middle" font-size="9" font-weight="600" fill="currentColor" font-family="Jost, sans-serif">0%</text></symbol>
 </svg>
 
 <!-- NAV -->
 <nav>
-  <a href="/" class="nav-logo" aria-label="Club Touriste — accueil"><img src="/logo-clubtouriste-cream.png" alt="Club Touriste"></a>
+  <a href="/" class="nav-logo" aria-label="Club Touriste — accueil"><img src="/logo-clubtouriste-fonce.png" alt="Club Touriste"></a>
   <ul class="nav-links">
     <li><a href="/#histoire">Histoire</a></li>
     <li><a href="/menu/" class="active">Menu</a></li>
@@ -832,7 +829,7 @@
 <!-- FOOTER -->
 <footer>
   <div class="footer-inner">
-    <a href="/" aria-label="Club Touriste — accueil"><img src="/logo-clubtouriste-cream.png" alt="Club Touriste" class="footer-logo-img" width="140" height="76" loading="lazy"></a>
+    <a href="/" aria-label="Club Touriste — accueil"><img src="/logo-clubtouriste-fonce.png" alt="Club Touriste" class="footer-logo-img" width="140" height="76" loading="lazy"></a>
     <div class="footer-copy">© 2026 Club Touriste Inc. · 133 Rue Victoria, Salaberry-de-Valleyfield · <a href="/politique-de-confidentialite" style="color:var(--text-muted);text-decoration:underline;text-underline-offset:3px">Confidentialité</a> · <a href="#" data-cc="show-preferencesModal" style="color:var(--text-muted);text-decoration:underline;text-underline-offset:3px">Gérer les témoins</a></div>
     <div class="footer-social">
       <a href="https://www.facebook.com/clubtouriste" target="_blank" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
