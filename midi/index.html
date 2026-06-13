@@ -38,9 +38,9 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/midi-manifest.webmanifest">
 <link rel="icon" href="/favicon.ico">
-<meta name="theme-color" content="#0F0D0A">
+<meta name="theme-color" content="#F2E5DE">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="apple-mobile-web-app-title" content="Menu Midi CT">
 <title>Menu du Midi | Club Touriste — Restaurant Salaberry-de-Valleyfield</title>
 <meta name="description" content="Menu du midi du Club Touriste — lundi au vendredi dès 11h30. Entrée incluse, repas à partir de 25.95$, desserts maison. Restaurant gastronomique Salaberry-de-Valleyfield. Réservez au (450) 373-5290.">
@@ -72,10 +72,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{--gold:#C9A96E;--gold-light:#E8D5A3;--gold-dark:#9B7A40;--cream:#F5F0E8;--dark:#0F0D0A;--dark-mid:#1A1712;--dark-surface:#231F1A;--dark-card:#2A2520;--text-light:#F0EAE0;--text-muted:#D5CDBF;--border:rgba(201,169,110,0.25);--font-display:'Playfair Display',Georgia,serif;--font-body:'Cormorant Garamond',Georgia,serif;--font-ui:'Jost',sans-serif}
+:root{--gold:#946B4C;--gold-light:#B0875E;--gold-dark:#775840;--rose:#9F6950;--rose-deep:#855742;--sage:#717656;--sage-deep:#5B6043;--green:#575C3D;--cream:#28221F;--dark:#F2E5DE;--dark-mid:#E9DAD3;--dark-surface:#EBE1DB;--dark-card:#E4D6CE;--text-light:#28221F;--text-muted:#6E6053;--border:rgba(40,34,31,0.16);--font-display:'Playfair Display',Georgia,serif;--font-body:'Cormorant Garamond',Georgia,serif;--font-ui:'Jost',sans-serif}
 html{scroll-behavior:smooth}
 body{background:var(--dark);color:var(--text-light);font-family:var(--font-body);font-size:19px;line-height:1.7;overflow-x:hidden}
-nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:.8rem 3rem;background:rgba(15,13,10,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:.8rem 3rem;background:rgba(242,231,220,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
 .nav-logo{display:flex;align-items:center;text-decoration:none;height:54px}
 .nav-logo img{height:100%;width:auto;display:block;opacity:.92;transition:opacity .2s}
 .nav-logo:hover img{opacity:1}
@@ -87,10 +87,10 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .nav-social a{color:var(--text-muted);transition:color .2s;display:flex;align-items:center}
 .nav-social a:hover{color:var(--gold)}
 .nav-social svg{width:17px;height:17px;fill:currentColor}
-.nav-reserve{font-family:var(--font-ui);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--dark);background:var(--gold);padding:.55rem 1.4rem;text-decoration:none;transition:background .2s}
-.nav-reserve:hover{background:var(--gold-light)}
+.nav-reserve{font-family:var(--font-ui);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--dark);background:var(--green);padding:.55rem 1.4rem;text-decoration:none;transition:background .2s}
+.nav-reserve:hover{background:var(--rose-deep)}
 .page-header{padding:9rem 2rem 3rem;text-align:center;position:relative;overflow:hidden}
-.page-header::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 50% at 50% 100%,rgba(201,169,110,.06) 0%,transparent 70%)}
+.page-header::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 50% at 50% 100%,rgba(87,92,61,.05) 0%,transparent 70%)}
 .page-eyebrow{font-family:var(--font-ui);font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;position:relative;display:flex;align-items:center;gap:1rem;justify-content:center}
 .page-eyebrow::before,.page-eyebrow::after{content:'';width:40px;height:1px;background:var(--gold-dark)}
 .page-title{font-family:var(--font-display);font-size:clamp(2.5rem,6vw,4.5rem);font-weight:400;line-height:1.05;color:var(--cream);position:relative;margin-bottom:.5rem}
@@ -122,13 +122,13 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .repas-extra{margin-top:2rem;text-align:center}
 .repas-extra-item{font-family:var(--font-ui);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--text-muted);padding:.5rem 0}
 .repas-extra-price{color:var(--gold);margin-left:.3rem}
-.badge-gf{display:inline-flex;align-items:center;justify-content:center;width:16px;height:16px;border-radius:50%;border:1px solid var(--gold-dark)}
-.badge-gf svg{width:10px;height:10px;fill:none;stroke:var(--gold);stroke-width:2}
+.badge-gf{display:inline-flex;align-items:center;justify-content:center;width:16px;height:16px;border-radius:50%;border:1px solid var(--sage-deep)}
+.badge-gf svg{width:10px;height:10px;fill:none;stroke:var(--sage);stroke-width:2}
 /* SIDES */
 .sides-section{padding:3rem 0;border-top:1px solid var(--border)}
 .sides-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;margin-top:2rem}
 .sides-col h3{font-family:var(--font-display);font-size:1.5rem;font-style:italic;color:var(--cream);margin-bottom:1.5rem;text-align:center}
-.sides-item{display:flex;justify-content:space-between;padding:.4rem 0;border-bottom:1px solid rgba(201,169,110,.08)}
+.sides-item{display:flex;justify-content:space-between;padding:.4rem 0;border-bottom:1px solid var(--border)}
 .sides-item span:first-child{font-family:var(--font-ui);font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--text-muted)}
 .sides-item span:last-child{font-family:var(--font-display);font-size:.95rem;color:var(--gold)}
 /* DESSERTS */
@@ -143,8 +143,8 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 /* CTA */
 .cta-bar{text-align:center;padding:4rem 2rem;background:var(--dark-mid);border-top:1px solid var(--border)}
 .cta-bar p{font-family:var(--font-body);font-size:1.2rem;font-style:italic;color:var(--text-muted);margin-bottom:2rem;max-width:480px;margin-left:auto;margin-right:auto}
-.btn-primary{font-family:var(--font-ui);font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;color:var(--dark);background:var(--gold);padding:1rem 2.4rem;text-decoration:none;display:inline-block;transition:background .2s}
-.btn-primary:hover{background:var(--gold-light)}
+.btn-primary{font-family:var(--font-ui);font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;color:var(--dark);background:var(--green);padding:1rem 2.4rem;text-decoration:none;display:inline-block;transition:background .2s}
+.btn-primary:hover{background:var(--rose-deep)}
 .cta-links{margin-top:1.5rem;display:flex;gap:2rem;justify-content:center}
 .cta-links a{font-family:var(--font-ui);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-dark);text-decoration:none;transition:color .2s}
 .cta-links a:hover{color:var(--gold)}
@@ -163,11 +163,12 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:3rem 2r
 @media(max-width:600px){.page-header{padding:7rem 1.2rem 2rem}.container{padding:0 1.2rem}}
 .fade-up{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease}
 .fade-up.visible{opacity:1;transform:translateY(0)}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
 </style>
 </head>
 <body>
 <nav>
-  <a href="/" class="nav-logo" aria-label="Club Touriste — accueil"><img src="/logo-clubtouriste-cream.png" alt="Club Touriste"></a>
+  <a href="/" class="nav-logo" aria-label="Club Touriste — accueil"><img src="/logo-clubtouriste-fonce.png" alt="Club Touriste"></a>
   <ul class="nav-links">
     <li><a href="/#histoire">Histoire</a></li>
     <li><a href="/menu/">Menu</a></li>
@@ -334,7 +335,7 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:3rem 2r
 
 <footer>
   <div class="footer-inner">
-    <a href="/" aria-label="Club Touriste — accueil"><img src="/logo-clubtouriste-cream.png" alt="Club Touriste" class="footer-logo-img" width="140" height="76" loading="lazy"></a>
+    <a href="/" aria-label="Club Touriste — accueil"><img src="/logo-clubtouriste-fonce.png" alt="Club Touriste" class="footer-logo-img" width="140" height="76" loading="lazy"></a>
     <div class="footer-copy">© 2026 Club Touriste Inc. · 133 Rue Victoria, Salaberry-de-Valleyfield · <a href="/politique-de-confidentialite" style="color:var(--text-muted);text-decoration:underline;text-underline-offset:3px">Confidentialité</a> · <a href="#" data-cc="show-preferencesModal" style="color:var(--text-muted);text-decoration:underline;text-underline-offset:3px">Gérer les témoins</a></div>
     <div class="footer-social">
       <a href="https://www.facebook.com/clubtouriste" target="_blank" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
