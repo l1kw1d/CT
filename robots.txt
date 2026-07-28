@@ -23,25 +23,37 @@ Disallow: /*?replytocom=
 Disallow: /promotions/
 Disallow: /category/promotions/
 
-# Bloquer les crawlers IA sauf ceux utiles au SEO
-User-agent: GPTBot
-Disallow: /
+# ——— Récupération / citations IA (le canal qui compte) ———
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: Claude-SearchBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: DuckAssistBot
+Allow: /
 
+# ——— Agents déclenchés par un utilisateur réel ———
 User-agent: ChatGPT-User
-Disallow: /
+Allow: /
+User-agent: Claude-User
+Allow: /
+User-agent: Perplexity-User
+Allow: /
 
+# ——— Entraînement (choix de politique — ici : autorisé) ———
+User-agent: GPTBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
 User-agent: CCBot
-Disallow: /
+Allow: /
+User-agent: Google-Extended
+Allow: /
 
-User-agent: anthropic-ai
-Disallow: /
-
-User-agent: Claude-Web
-Disallow: /
-
+# ——— Scrapers de faible valeur ———
 User-agent: Bytespider
 Disallow: /
-
 User-agent: PetalBot
 Disallow: /
 
