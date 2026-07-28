@@ -22,6 +22,7 @@ Disallow: /*?p=
 Disallow: /*?replytocom=
 Disallow: /promotions/
 Disallow: /category/promotions/
+Disallow: /Menu_Touriste_2026.pdf
 
 # ——— Récupération / citations IA (le canal qui compte) ———
 User-agent: OAI-SearchBot
